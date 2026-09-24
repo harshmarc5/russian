@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podolsk Machinery & Equipment Plant (PZO) | Official Site</title>
+  
+  <!-- Fonts: Montserrat & Inter for exact geometric grotesque typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pzo: {
+              navy: '#1A2138',         // Exact primary navy button & footer tone
+              navyHover: '#13182b',
+              heroBg: '#DCE7F3',        // Soft ice-blue gradient base
+              cardBg: '#EDF3F9',        // Light ice-blue card background
+              cardHover: '#E4ECF4',
+              accentRed: '#EF4444',
+              accentGreen: '#10B981',
+              textPrimary: '#1A2138',
+              textSecondary: '#6B7685',
+              borderLight: '#E2E8F0',
+              inputBg: '#FFFFFF',
+              footerBg: '#1A2138'
+            }
+          },
+          fontFamily: {
+            sans: ['"Montserrat"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #1A2138;
+      overflow-x: hidden;
+      background-color: #FFFFFF;
+    }
+    .tight-title {
+      letter-spacing: -0.04em;
+    }
+    /* Clip path for the geometric PZO stencil cutout */
+    .pzo-stencil-mask {
+      clip-path: polygon(
+        0% 0%, 28% 0%, 28% 100%, 0% 100%, 0% 0%,
+        33% 0%, 55% 50%, 33% 100%, 46% 100%, 65% 55%, 65% 100%, 75% 100%, 75% 55%, 100% 55%, 100% 45%, 75% 45%, 75% 0%, 65% 0%, 46% 45%, 39% 0%
+      );
+    }
+    /* Hide scrollbars for slick carousels while allowing touch scroll */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="relative">
+
+  <!-- ================= TOP UTILITY BAR ================= -->
+  <div class="bg-white border-b border-gray-100 text-[12px] text-pzo-textSecondary font-medium">
+    <div class="max-w-[1440px] mx-auto px-6 h-10 flex items-center justify-between">
+      
+      <!-- Left: City + Utility Nav Links -->
+      <div class="flex items-center space-x-6">
+        <div class="flex items-center space-x-1.5 text-pzo-textPrimary font-semibold cursor-pointer">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>Moscow</span>
+        </div>
+        <nav class="hidden xl:flex items-center space-x-5">
+          <a href="#delivery" class="hover:text-pzo-textPrimary transition">Delivery</a>
+          <a href="#service" class="hover:text-pzo-textPrimary transition">Customer service</a>
+          <a href="#dealer" class="hover:text-pzo-textPrimary transition">Become a dealer</a>
+          <a href="#about" class="hover:text-pzo-textPrimary transition">About the company</a>
+          <a href="#contacts" class="hover:text-pzo-textPrimary transition">Contacts</a>
+          <a href="#managers" class="hover:text-pzo-textPrimary transition">Managers</a>
+          <a href="#video" class="hover:text-pzo-textPrimary transition">Video</a>
+          <a href="#stock" class="hover:text-pzo-textPrimary transition">Stock</a>
+          <a href="#new" class="text-amber-500 font-bold hover:underline transition">New items</a>
+        </nav>
+      </div>
+
+      <!-- Right: Direct Sales Hotline -->
+      <div class="flex items-center space-x-4">
+        <a href="tel:+74993900555" class="text-[13px] font-bold text-pzo-textPrimary tracking-tight hover:opacity-80 transition">
+          +7 (499) 390-05-55
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= MAIN STICKY HEADER ================= -->
+  <header class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm transition-all duration-200">
+    <div class="max-w-[1440px] mx-auto px-6 h-20 flex items-center justify-between gap-6">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center space-x-3.5 shrink-0">
+        <!-- Exact PZO Angular Monogram SVG -->
+        <svg class="h-10 w-auto" viewBox="0 0 120 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5 H25 V65 H5 Z" fill="#1A2138"/>
+          <path d="M25 5 H45 C55 5 62 12 62 22 C62 32 55 38 45 38 H25 Z" stroke="#1A2138" stroke-width="12" stroke-linejoin="round"/>
+          <path d="M55 65 L85 5 H105 L75 65 Z" fill="#1A2138"/>
+          <rect x="75" y="18" width="32" height="32" transform="rotate(45 75 18)" stroke="#1A2138" stroke-width="9"/>
+        </svg>
+        <div class="flex flex-col border-l border-gray-300 pl-3">
+          <span class="text-[9px] font-bold text-pzo-textPrimary uppercase leading-tight tracking-tight">ПОДОЛЬСКИЙ ЗАВОД</span>
+          <span class="text-[9px] font-bold text-pzo-textPrimary uppercase leading-tight tracking-tight">ОБОРУДОВАНИЯ</span>
+        </div>
+      </a>
+
+      <!-- Pill CATALOG Trigger Button -->
+      <button onclick="toggleCatalogModal()" class="flex items-center space-x-2.5 border border-gray-200 hover:border-pzo-navy px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition group">
+        <svg class="w-4 h-4 text-pzo-textPrimary group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <span>CATALOG</span>
+      </button>
+
+      <!-- Pill Search Bar with Autocomplete Feel -->
+      <div class="flex-1 max-w-lg relative hidden md:block">
+        <div class="relative w-full">
+          <input 
+            type="text" 
+            placeholder="Search the site" 
+            class="w-full bg-[#F4F7FA] border border-transparent focus:border-gray-300 focus:bg-white text-xs rounded-full py-2.5 pl-10 pr-4 text-pzo-textPrimary placeholder-gray-400 outline-none transition"
+          />
+          <svg class="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+      </div>
+
+      <!-- Action Icons (Wishlist, Compare, Cart) + Contact Us Button -->
+      <div class="flex items-center space-x-3 sm:space-x-4">
+        
+        <!-- Wishlist -->
+        <button class="w-10 h-10 rounded-full border border-gray-200 hover:border-pzo-navy flex items-center justify-center text-pzo-textPrimary transition relative">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        </button>
+
+        <!-- Compare -->
+        <button class="w-10 h-10 rounded-full border border-gray-200 hover:border-pzo-navy flex items-center justify-center text-pzo-textPrimary transition relative">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </button>
+
+        <!-- Cart -->
+        <button class="w-10 h-10 rounded-full border border-gray-200 hover:border-pzo-navy flex items-center justify-center text-pzo-textPrimary transition relative">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+        </button>
+
+        <!-- CONTACT US Button -->
+        <a href="#lead-form" class="bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold px-6 py-3 rounded-full uppercase tracking-wider transition shadow-sm">
+          CONTACT US
+        </a>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION WITH GEOMETRIC STENCIL ================= -->
+  <section class="relative bg-gradient-to-b from-[#E6EEF7] via-[#EFF5FA] to-white pt-16 pb-24 overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[460px]">
+      
+      <!-- Left Hero Statement -->
+      <div class="lg:col-span-4 z-10">
+        <p class="text-lg md:text-xl font-medium text-pzo-textPrimary leading-relaxed max-w-sm">
+          We create reliable and modern industrial equipment for businesses and people.
+        </p>
+      </div>
+
+      <!-- Right Monogram Video/Photo Mask Cutout Window -->
+      <div class="lg:col-span-8 relative flex items-center justify-center">
+        <div class="relative w-full max-w-[760px] h-[340px] sm:h-[400px] rounded-3xl overflow-hidden shadow-2xl bg-slate-900 border-4 border-white/80">
+          <!-- Background machinery video / image simulation -->
+          <img 
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=80" 
+            alt="PZO Industrial Manufacturing Facility" 
+            class="w-full h-full object-cover object-center scale-105"
+          />
+          <div class="absolute inset-0 bg-blue-900/20 mix-blend-multiply"></div>
+          
+          <!-- Geometric PZO Stencil Overlay Frame -->
+          <div class="absolute inset-0 pointer-events-none flex items-center justify-center p-8">
+            <svg class="w-full h-full text-white/90 drop-shadow-md" viewBox="0 0 500 240" fill="none" stroke="currentColor" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Geometric P -->
+              <path d="M 50,30 L 50,210 M 50,30 L 120,30 C 160,30 160,110 120,110 L 50,110" />
+              <!-- Geometric Z -->
+              <path d="M 180,30 L 290,30 L 180,210 L 290,210" />
+              <!-- Geometric O Diamond -->
+              <polygon points="390,30 470,120 390,210 310,120" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Floating Cookie Notice (Exact match to screenshot) -->
+    <div id="cookieNotice" class="fixed bottom-6 right-6 z-40 bg-white/95 backdrop-blur-md border border-gray-200 rounded-2xl shadow-xl p-4 flex items-center space-x-6 max-w-lg transition-all duration-300">
+      <p class="text-xs text-gray-600 leading-tight">
+        We use cookies to improve your experience on our website. Learn more: <a href="#" class="underline hover:text-pzo-navy">Cookie Policy</a> and <a href="#" class="underline hover:text-pzo-navy">Data Protection</a>.
+      </p>
+      <button onclick="document.getElementById('cookieNotice').remove()" class="bg-pzo-navy text-white text-xs font-bold px-5 py-2.5 rounded-xl uppercase tracking-wider shrink-0 hover:bg-pzo-navyHover transition">
+        ACCEPT
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 1: Industrialequipment production (3 Action Cards) ================= -->
+  <section class="max-w-[1440px] mx-auto px-6 py-8">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-pzo-textPrimary tight-title mb-8">
+      Industrialequipment production
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1: Catalog -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-8 flex flex-col justify-between h-[300px] hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
+        <div>
+          <h3 class="text-2xl md:text-3xl font-bold text-pzo-textPrimary mb-8">Catalog</h3>
+          <div class="inline-block bg-white text-pzo-textPrimary font-semibold text-xs px-6 py-3 rounded-full shadow-sm">
+            Equipment selection
+          </div>
+        </div>
+        <div class="flex items-center justify-between text-xs text-gray-600 pt-6 border-t border-blue-100/50">
+          <span>We have over 300 product items available.</span>
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- Card 2: Contacts -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-8 flex flex-col justify-between h-[300px] hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
+        <div>
+          <h3 class="text-2xl md:text-3xl font-bold text-pzo-textPrimary">Contacts</h3>
+        </div>
+        <div class="flex items-center justify-between text-xs text-gray-600 pt-6 border-t border-blue-100/50">
+          <span>We will answer any questions</span>
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- Card 3: Become a dealer -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-8 flex flex-col justify-between h-[300px] hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
+        <div>
+          <h3 class="text-2xl md:text-3xl font-bold text-pzo-textPrimary">Become a dealer</h3>
+        </div>
+        <div class="flex items-center justify-between text-xs text-gray-600 pt-6 border-t border-blue-100/50">
+          <span>We invite dealers to cooperate</span>
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: PRODUCT CATEGORIES GRID (Complete 24-Card Matrix) ================= -->
+  <section class="max-w-[1440px] mx-auto px-6 py-12">
+    <!-- Top Filter Header -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-pzo-textPrimary tight-title mb-6">
+          Product categories
+        </h2>
+        <div class="flex items-center space-x-3">
+          <button class="bg-pzo-navy text-white text-xs font-bold px-6 py-2.5 rounded-full uppercase tracking-wider shadow-sm">
+            CATEGORIES
+          </button>
+          <button class="border border-gray-300 hover:border-pzo-navy text-gray-700 text-xs font-semibold px-6 py-2.5 rounded-full uppercase tracking-wider transition">
+            BY APPOINTMENT
+          </button>
+        </div>
+      </div>
+      <button class="bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold px-6 py-3 rounded-full uppercase tracking-wider transition shadow-sm self-start sm:self-auto">
+        ALL CATEGORIES
+      </button>
+    </div>
+
+    <!-- 3-Column Product Category Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- 1. Horizontal presses -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Horizontal presses</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="Horizontal balers" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 2. Vertical presses -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Vertical presses</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Vertical hydraulic balers" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 3. Press compactors -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Press compactors</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80" alt="Press compactors" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 4. Interactive Callout: We will find the best solution -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-8 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200">
+        <div>
+          <h3 class="text-2xl font-bold text-pzo-textPrimary mb-4">We will find the best solution</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Our engineering department configures custom machinery according to your facility's technical specifications and daily throughput volume.</p>
+        </div>
+        <div>
+          <button class="bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold px-6 py-3 rounded-full uppercase tracking-wider transition shadow-sm">
+            SELECT EQUIPMENT
+          </button>
+        </div>
+      </div>
+
+      <!-- 5. Crushers & Granulators -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Crushers</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=400&q=80" alt="Industrial crushers and granulators" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 6. Single-shaft shredders -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Single-shaft shredders</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=400&q=80" alt="Single-shaft shredder" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 7. Twin-shaft shredders -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Twin-shaft shredders</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80" alt="Twin-shaft industrial shredders" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 8. Pallet wrappers -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Pallet wrappers</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=80" alt="Semi-automatic pallet wrappers" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 9. Orbital wrappers -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Orbital wrappers</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=400&q=80" alt="Orbital stretch wrapping machinery" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 10. Baling presses -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Baling presses</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="High-tonnage scrap baling presses" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 11. Strapping machine -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Strapping machine</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80" alt="Automatic strapping machines" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 12. Guillotines -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Guillotines</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Industrial hydraulic guillotines" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 13. Agglomerators -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Agglomerators</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=400&q=80" alt="Film and polymer agglomerators" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 14. Cyclones -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Cyclones</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80" alt="Cyclone dust and flake separators" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 15. Other equipment -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Other equipment</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80" alt="Auxiliary industrial equipment" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 16. Washing equipment -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Washing equipment</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="Polymer hot and friction washing tanks" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 17. Centrifuges -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Centrifuges</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=400&q=80" alt="High-speed dewatering centrifuges" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 18. Drying complexes -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Drying complexes</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80" alt="Hot-air pipe thermal dryers" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 19. Transport (Conveyors) -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Transport</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=80" alt="Belt conveyors and feeding loaders" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 20. Periphery -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Periphery</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Peripheral hopper loaders and dosing units" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 21. Alligator scissors -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Alligator scissors</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="Hydraulic alligator metal shears" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 22. Rubber processing equipment -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Rubber processing equipment</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80" alt="Tire shredders and crumb rubber plants" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 23. Spare parts -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Spare parts</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80" alt="OEM blades, screens, and hydraulic rams" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- 24. Granulator -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
+        <h3 class="text-xl font-bold text-pzo-textPrimary">Granulator</h3>
+        <div class="flex-1 flex items-center justify-center py-2">
+          <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Single and twin-screw pelletizers" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="flex justify-end">
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: Processing and packaging lines and complexes ================= -->
+  <section class="max-w-[1440px] mx-auto px-6 py-12">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-pzo-textPrimary tight-title">
+        Processing and packaging lines and complexes
+      </h2>
+      <button class="bg-pzo-navy text-white text-xs font-bold px-6 py-3 rounded-full uppercase tracking-wider shadow-sm hover:bg-pzo-navyHover transition">
+        READY-MADE SOLUTIONS
+      </button>
+    </div>
+
+    <!-- 4 Lines Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Line 1 -->
+      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center text-[11px] font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
+              <span class="w-2 h-2 rounded-full bg-amber-500 mr-1.5 animate-pulse"></span>
+              Made to order
+            </span>
+            <button class="text-gray-300 hover:text-red-500 transition">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </button>
+          </div>
+          <div class="h-40 flex items-center justify-center mb-4">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80" alt="Garbage and waste processing line" class="max-h-36 object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="text-sm font-bold text-pzo-textPrimary mb-6">
+            Garbage and waste processing line
+          </h4>
+        </div>
+        <button class="w-full border border-gray-300 hover:border-pzo-navy hover:text-white hover:bg-pzo-navy text-pzo-textPrimary text-xs font-bold py-3 rounded-full uppercase tracking-wider transition">
+          PLACE AN ORDER
+        </button>
+      </div>
+
+      <!-- Line 2 -->
+      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center text-[11px] font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
+              <span class="w-2 h-2 rounded-full bg-amber-500 mr-1.5 animate-pulse"></span>
+              Made to order
+            </span>
+            <button class="text-gray-300 hover:text-red-500 transition">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </button>
+          </div>
+          <div class="h-40 flex items-center justify-center mb-4">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="PET bottle to flexo recycling line" class="max-h-36 object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="text-sm font-bold text-pzo-textPrimary mb-6">
+            PET bottle to flexo recycling line
+          </h4>
+        </div>
+        <button class="w-full border border-gray-300 hover:border-pzo-navy hover:text-white hover:bg-pzo-navy text-pzo-textPrimary text-xs font-bold py-3 rounded-full uppercase tracking-wider transition">
+          PLACE AN ORDER
+        </button>
+      </div>
+
+      <!-- Line 3 -->
+      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center text-[11px] font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
+              <span class="w-2 h-2 rounded-full bg-amber-500 mr-1.5 animate-pulse"></span>
+              Made to order
+            </span>
+            <button class="text-gray-300 hover:text-red-500 transition">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </button>
+          </div>
+          <div class="h-40 flex items-center justify-center mb-4">
+            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80" alt="Film material processing line" class="max-h-36 object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="text-sm font-bold text-pzo-textPrimary mb-6">
+            Film material processing line
+          </h4>
+        </div>
+        <button class="w-full border border-gray-300 hover:border-pzo-navy hover:text-white hover:bg-pzo-navy text-pzo-textPrimary text-xs font-bold py-3 rounded-full uppercase tracking-wider transition">
+          PLACE AN ORDER
+        </button>
+      </div>
+
+      <!-- Line 4 -->
+      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center text-[11px] font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
+              <span class="w-2 h-2 rounded-full bg-amber-500 mr-1.5 animate-pulse"></span>
+              Made to order
+            </span>
+            <button class="text-gray-300 hover:text-red-500 transition">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </button>
+          </div>
+          <div class="h-40 flex items-center justify-center mb-4">
+            <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=400&q=80" alt="Washing line for PS, ABS, PC, PVC" class="max-h-36 object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="text-sm font-bold text-pzo-textPrimary mb-6">
+            Washing line for PS, ABS, PC, PVC
+          </h4>
+        </div>
+        <button class="w-full border border-gray-300 hover:border-pzo-navy hover:text-white hover:bg-pzo-navy text-pzo-textPrimary text-xs font-bold py-3 rounded-full uppercase tracking-wider transition">
+          PLACE AN ORDER
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: BEST DEALS (Machine Catalog Grid) ================= -->
+  <section class="max-w-[1440px] mx-auto px-6 py-12">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-3xl font-extrabold text-pzo-textPrimary tight-title">
+        Best deals
+      </h2>
+      <!-- Carousel Next/Prev Controls -->
+      <div class="flex items-center space-x-2">
+        <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition">
+          <svg class="w-4 h-4 text-pzo-textPrimary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition">
+          <svg class="w-4 h-4 text-pzo-textPrimary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Product 1 -->
+      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative group">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="inline-flex items-center text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
+              In stock
+            </span>
+            <div class="flex items-center space-x-2">
+              <button class="text-gray-300 hover:text-pzo-navy transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></button>
+              <button class="text-gray-300 hover:text-red-500 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></button>
+            </div>
+          </div>
+          <div class="h-48 flex items-center justify-center py-2">
+            <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Press PZO-4 mini" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="text-sm font-bold text-pzo-textPrimary leading-snug mb-2">
+            Press PZO-4 (PGP-4) mini (compact), 380V
+          </h4>
+          <div class="text-lg font-black text-pzo-textPrimary mb-6">
+            205,536 ₽
+          </div>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button class="flex-1 border border-gray-300 hover:border-pzo-navy text-pzo-textPrimary text-xs font-bold py-2.5 rounded-full uppercase tracking-wider transition">
+            REQUEST A QUOTE
+          </button>
+          <button class="w-10 h-10 rounded-full bg-pzo-navy hover:bg-pzo-navyHover text-white flex items-center justify-center transition shrink-0">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative group">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="inline-flex items-center text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
+              In stock
+            </span>
+            <div class="flex items-center space-x-2">
+              <button class="text-gray-300 hover:text-pzo-navy transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></button>
+              <button class="text-gray-300 hover:text-red-500 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></button>
+            </div>
+          </div>
+          <div class="h-48 flex items-center justify-center py-2 relative">
+            <span class="absolute top-2 right-2 bg-pzo-navy text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
+              Top sales
+            </span>
+            <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=400&q=80" alt="Single-shaft shredder PZO SHR 600 n22" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="text-sm font-bold text-pzo-textPrimary leading-snug mb-2">
+            Single-shaft shredder PZO SHR 600 n22
+          </h4>
+          <div class="text-lg font-black text-pzo-textPrimary mb-6">
+            1,723,800 ₽
+          </div>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button class="flex-1 border border-gray-300 hover:border-pzo-navy text-pzo-textPrimary text-xs font-bold py-2.5 rounded-full uppercase tracking-wider transition">
+            REQUEST A QUOTE
+          </button>
+          <button class="w-10 h-10 rounded-full bg-pzo-navy hover:bg-pzo-navyHover text-white flex items-center justify-center transition shrink-0">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative group">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center space-x-1.5">
+              <span class="inline-flex items-center text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
+                In stock
+              </span>
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-md">- 19,584 ₽</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <button class="text-gray-300 hover:text-pzo-navy transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></button>
+              <button class="text-gray-300 hover:text-red-500 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></button>
+            </div>
+          </div>
+          <div class="h-48 flex items-center justify-center py-2 relative">
+            <div class="absolute top-2 right-2 flex flex-col space-y-1 items-end">
+              <span class="bg-gray-100 text-gray-700 text-[10px] font-bold px-2 py-0.5 rounded">New version</span>
+              <span class="bg-blue-50 text-blue-700 text-[10px] font-bold px-2 py-0.5 rounded">Prestretch up to 250%</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=80" alt="Semi-automatic pallet wrapper PZO BPW-2000" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="text-sm font-bold text-pzo-textPrimary leading-snug mb-2">
+            Semi-automatic pallet wrapper PZO BPW-2000
+          </h4>
+          <div class="flex items-baseline space-x-2 mb-6">
+            <span class="text-lg font-black text-pzo-textPrimary">298,000 ₽</span>
+            <span class="text-xs text-gray-400 line-through">317,584 ₽</span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button class="flex-1 border border-gray-300 hover:border-pzo-navy text-pzo-textPrimary text-xs font-bold py-2.5 rounded-full uppercase tracking-wider transition">
+            REQUEST A QUOTE
+          </button>
+          <button class="w-10 h-10 rounded-full bg-pzo-navy hover:bg-pzo-navyHover text-white flex items-center justify-center transition shrink-0">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative group">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="inline-flex items-center text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
+              In stock
+            </span>
+            <div class="flex items-center space-x-2">
+              <button class="text-gray-300 hover:text-pzo-navy transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></button>
+              <button class="text-gray-300 hover:text-red-500 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></button>
+            </div>
+          </div>
+          <div class="h-48 flex items-center justify-center py-2 relative">
+            <span class="absolute top-2 right-2 bg-pzo-navy text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
+              Top sales
+            </span>
+            <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=400&q=80" alt="AMD-600D crusher" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="text-sm font-bold text-pzo-textPrimary leading-snug mb-2">
+            AMD-600D crusher
+          </h4>
+          <div class="text-lg font-black text-pzo-textPrimary mb-6">
+            234,874 ₽
+          </div>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button class="flex-1 border border-gray-300 hover:border-pzo-navy text-pzo-textPrimary text-xs font-bold py-2.5 rounded-full uppercase tracking-wider transition">
+            REQUEST A QUOTE
+          </button>
+          <button class="w-10 h-10 rounded-full bg-pzo-navy hover:bg-pzo-navyHover text-white flex items-center justify-center transition shrink-0">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: THE HISTORY OF OUR DEVELOPMENT ================= -->
+  <section class="max-w-[1440px] mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left Narrative + Year Stepper -->
+      <div class="lg:col-span-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-pzo-textPrimary tight-title mb-8">
+          The history of our development
+        </h2>
+
+        <!-- Navigation Arrows -->
+        <div class="flex items-center space-x-2 mb-10">
+          <button onclick="prevMilestone()" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition">
+            <svg class="w-4 h-4 text-pzo-textPrimary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button onclick="nextMilestone()" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition">
+            <svg class="w-4 h-4 text-pzo-textPrimary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Dynamic Year Milestone Text -->
+        <div class="mb-12">
+          <div id="timelineYear" class="text-3xl font-extrabold text-pzo-textPrimary mb-3">2016</div>
+          <p id="timelineDesc" class="text-sm text-gray-600 leading-relaxed max-w-md">
+            The plant was founded, production facilities were equipped, and the launch of primary baling equipment series commenced.
+          </p>
+        </div>
+
+        <!-- Horizontal Stepper Bar (2016 to 2025) -->
+        <div class="relative flex items-center justify-between border-t border-gray-200 pt-6">
+          <button onclick="setMilestone(0)" class="timeline-dot group flex flex-col items-center focus:outline-none">
+            <span class="w-3.5 h-3.5 rounded-full bg-pzo-navy ring-4 ring-blue-100 transition-all"></span>
+            <span class="text-xs font-bold text-pzo-textPrimary mt-2">2016</span>
+          </button>
+          <button onclick="setMilestone(1)" class="timeline-dot group flex flex-col items-center focus:outline-none">
+            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
+            <span class="text-xs font-semibold text-gray-400 mt-2">2017</span>
+          </button>
+          <button onclick="setMilestone(2)" class="timeline-dot group flex flex-col items-center focus:outline-none">
+            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
+            <span class="text-xs font-semibold text-gray-400 mt-2">2018</span>
+          </button>
+          <button onclick="setMilestone(3)" class="timeline-dot group flex flex-col items-center focus:outline-none">
+            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
+            <span class="text-xs font-semibold text-gray-400 mt-2">2019</span>
+          </button>
+          <button onclick="setMilestone(4)" class="timeline-dot group flex flex-col items-center focus:outline-none">
+            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
+            <span class="text-xs font-semibold text-gray-400 mt-2">2020</span>
+          </button>
+          <button onclick="setMilestone(5)" class="timeline-dot group flex flex-col items-center focus:outline-none">
+            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
+            <span class="text-xs font-semibold text-gray-400 mt-2">2021</span>
+          </button>
+          <button onclick="setMilestone(6)" class="timeline-dot group flex flex-col items-center focus:outline-none">
+            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
+            <span class="text-xs font-semibold text-gray-400 mt-2">2022</span>
+          </button>
+          <button onclick="setMilestone(7)" class="timeline-dot group flex flex-col items-center focus:outline-none">
+            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
+            <span class="text-xs font-semibold text-gray-400 mt-2">2023</span>
+          </button>
+          <button onclick="setMilestone(8)" class="timeline-dot group flex flex-col items-center focus:outline-none">
+            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
+            <span class="text-xs font-semibold text-gray-400 mt-2">2024</span>
+          </button>
+          <button onclick="setMilestone(9)" class="timeline-dot group flex flex-col items-center focus:outline-none">
+            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
+            <span class="text-xs font-semibold text-gray-400 mt-2">2025</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Plant Facility Aerial Photo -->
+      <div class="lg:col-span-6">
+        <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-200">
+          <img id="timelineImg" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" alt="PZO Facility Aerial View" class="w-full h-[400px] object-cover">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: CONSULTATION / LEAD FORM (Any questions left?) ================= -->
+  <section id="lead-form" class="max-w-[1440px] mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      
+      <!-- Left Header -->
+      <div class="lg:col-span-5 flex flex-col justify-between h-full pt-4">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-pzo-textPrimary tight-title leading-tight mb-4">
+            Any questions left<br>?
+          </h2>
+        </div>
+        <p class="text-xs text-gray-500 max-w-sm mt-12 lg:mt-32 leading-relaxed">
+          We will answer any of your questions regarding the production and maintenance of machines and equipment.
+        </p>
+      </div>
+
+      <!-- Right Form Box -->
+      <div class="lg:col-span-7 bg-[#F4F7FA] rounded-[32px] p-8 md:p-12">
+        <h3 class="text-base font-bold text-pzo-textPrimary mb-8">
+          Fill out the form and we will contact you shortly.
+        </h3>
+
+        <form class="space-y-6" onsubmit="event.preventDefault(); alert('Request received. Our engineering specialist will reach out shortly.');">
+          <!-- Name -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-2">Name *</label>
+            <input type="text" placeholder="Enter your name" required class="w-full bg-white border border-gray-200 text-xs rounded-xl py-3.5 px-4 outline-none focus:border-pzo-navy transition" />
+          </div>
+
+          <!-- Phone Number with Russia / Global Country Picker -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-2">Phone number *</label>
+            <div class="flex">
+              <div class="flex items-center space-x-1 bg-white border border-r-0 border-gray-200 rounded-l-xl px-3 text-xs text-gray-700">
+                <span>🇷🇺</span>
+                <span class="text-gray-400">&#9662;</span>
+              </div>
+              <input type="tel" placeholder="+7 (000) 000-00-00" required class="flex-1 bg-white border border-gray-200 text-xs rounded-r-xl py-3.5 px-4 outline-none focus:border-pzo-navy transition" />
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-2">Email *</label>
+            <input type="email" placeholder="sel@p-z-o.com" required class="w-full bg-white border border-gray-200 text-xs rounded-xl py-3.5 px-4 outline-none focus:border-pzo-navy transition" />
+          </div>
+
+          <!-- Question -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-2">Question</label>
+            <textarea rows="3" placeholder="Write your question" class="w-full bg-white border border-gray-200 text-xs rounded-xl py-3.5 px-4 outline-none focus:border-pzo-navy transition"></textarea>
+          </div>
+
+          <!-- Consent Checkbox -->
+          <div class="flex items-start space-x-3 pt-2">
+            <input type="checkbox" required id="consentCheck" class="mt-1 h-4 w-4 rounded border-gray-300 text-pzo-navy focus:ring-pzo-navy">
+            <label for="consentCheck" class="text-[11px] text-gray-500 leading-tight">
+              I agree to the <a href="#" class="underline text-gray-700">processing of my personal data</a>. I have read and agree with the terms of the <a href="#" class="underline text-gray-700">Privacy Policy</a>. I have read the Policy regarding the <a href="#" class="underline text-gray-700">processing of personal data</a>.
+            </label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w-full bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold py-4 rounded-full uppercase tracking-wider transition shadow-sm">
+            SEND
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 7: OUR PARTNERS (Client Grid) ================= -->
+  <section class="max-w-[1440px] mx-auto px-6 py-12">
+    <h2 class="text-3xl font-extrabold text-pzo-textPrimary tight-title mb-10">
+      Our partners
+    </h2>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center">
+      <!-- 24 Monochrome partner brand badges matching the video screenshot -->
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-sm text-gray-500 tracking-wider">ANT YAPI</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-lg text-gray-800 tracking-tighter">ATO/L</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-serif text-xs text-gray-700">азбука вкуса</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-semibold text-sm text-gray-800 italic">БАЛТИКА</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-extrabold text-lg text-gray-900">beko</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-sm text-gray-700">Бристоль</div>
+
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-medium text-xs text-gray-600">Campina</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-xs text-gray-700">Чижик</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-sm text-gray-800">Fix Price</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-extrabold text-xs text-gray-700">FM LOGISTIC</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-semibold text-xs text-gray-700">ГАЗПРОМ НЕФТЬ</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-mono text-xs text-gray-600">ГОЗНАК</div>
+
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-lg text-gray-900">Haier</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-sm text-gray-800 tracking-widest">HAVAL</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-extrabold text-sm text-gray-900">Hoff</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-extrabold text-sm text-gray-900">KARCHER</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-xs text-gray-800">K-FLEX</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-medium text-xs text-gray-600">TOSHIBA</div>
+
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-xs text-gray-700">ПОЧТА РОССИИ</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-mono text-xs text-gray-800">RB LOGISTICS</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-sm text-gray-900">LIEBHERR</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-xs text-gray-700">РУСАЛ</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-sm text-gray-800">РЖД</div>
+      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-xs text-gray-700">СБЕР ЛОГИСТИКА</div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 8: WHY CHOOSE US ================= -->
+  <section class="max-w-[1440px] mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      
+      <!-- Left Narrative -->
+      <div class="lg:col-span-5 flex flex-col justify-between h-full pt-4">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-pzo-textPrimary tight-title leading-tight mb-8">
+            Why<br>choose us
+          </h2>
+          <p class="text-xs text-gray-500 max-w-sm leading-relaxed mb-8">
+            Since 2016, we have been committed to creating the best equipment, leveraging our own experience, global best practices, and customer input.
+          </p>
+        </div>
+        <div>
+          <button class="bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold px-6 py-3.5 rounded-full uppercase tracking-wider transition shadow-sm">
+            ABOUT THE COMPANY
+          </button>
+        </div>
+      </div>
+
+      <!-- Right 4 Feature Cards Matrix with Light Watermark Icons -->
+      <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        
+        <!-- 1. Own production -->
+        <div class="bg-pzo-cardBg rounded-[28px] p-8 h-56 flex flex-col justify-between relative overflow-hidden group">
+          <h3 class="text-xl font-bold text-pzo-textPrimary z-10">Own<br>production</h3>
+          <!-- Gear watermark icon -->
+          <svg class="w-32 h-32 text-blue-200/50 absolute -right-4 -bottom-4 z-0 group-hover:scale-110 group-hover:rotate-45 transition-all duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97c0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1c0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>
+        </div>
+
+        <!-- 2. Wear-resistant equipment -->
+        <div class="bg-pzo-cardBg rounded-[28px] p-8 h-56 flex flex-col justify-between relative overflow-hidden group">
+          <h3 class="text-xl font-bold text-pzo-textPrimary z-10">Wear-resistant<br>equipment</h3>
+          <!-- Shield watermark icon -->
+          <svg class="w-32 h-32 text-blue-200/50 absolute -right-4 -bottom-4 z-0 group-hover:scale-110 transition-all duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        </div>
+
+        <!-- 3. Delivery throughout Russia -->
+        <div class="bg-pzo-cardBg rounded-[28px] p-8 h-56 flex flex-col justify-between relative overflow-hidden group">
+          <h3 class="text-xl font-bold text-pzo-textPrimary z-10">Delivery<br>throughout Russia</h3>
+          <!-- Truck watermark icon -->
+          <svg class="w-32 h-32 text-blue-200/50 absolute -right-4 -bottom-4 z-0 group-hover:scale-110 group-hover:translate-x-2 transition-all duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M18 18.5a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5m1.5-9H17V12h4.5l-2-2.5M6 18.5A1.5 1.5 0 0 1 4.5 17A1.5 1.5 0 0 1 6 15.5A1.5 1.5 0 0 1 7.5 17A1.5 1.5 0 0 1 6 18.5M20 8h-3V4H3c-1.11 0-2 .89-2 2v11h2a3 3 0 0 0 3 3a3 3 0 0 0 3-3h6a3 3 0 0 0 3 3a3 3 0 0 0 3-3h2v-5l-3-4Z"/></svg>
+        </div>
+
+        <!-- 4. 1 year warranty -->
+        <div class="bg-pzo-cardBg rounded-[28px] p-8 h-56 flex flex-col justify-between relative overflow-hidden group">
+          <h3 class="text-xl font-bold text-pzo-textPrimary z-10">1 year warranty</h3>
+          <!-- Checkmark badge watermark icon -->
+          <svg class="w-32 h-32 text-blue-200/50 absolute -right-4 -bottom-4 z-0 group-hover:scale-110 transition-all duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="m10 17l-5-5l1.41-1.42L10 14.17l7.59-7.59L19 8m-7-6A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 9: VIDEO PLAYER BANNER ================= -->
+  <section class="max-w-[1440px] mx-auto px-6 py-8">
+    <div class="relative w-full h-[420px] rounded-[32px] overflow-hidden shadow-2xl bg-black flex items-center justify-center group cursor-pointer">
+      <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80" alt="Machinery lathe precision turning" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700">
+      
+      <!-- Central White Circular Play Button -->
+      <div class="w-20 h-20 rounded-full bg-white text-pzo-navy flex items-center justify-center pl-1 shadow-2xl group-hover:scale-110 transition-transform">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 10: USEFUL ARTICLES ================= -->
+  <section class="max-w-[1440px] mx-auto px-6 py-16">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-3xl font-extrabold text-pzo-textPrimary tight-title">
+        Useful<br>articles
+      </h2>
+      <button class="bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold px-6 py-3 rounded-full uppercase tracking-wider shadow-sm transition">
+        ALL ARTICLES
+      </button>
+    </div>
+
+    <!-- 3 Article Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Article 1 -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-8 h-[280px] flex flex-col justify-between hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
+        <h3 class="text-base font-bold text-pzo-textPrimary leading-snug">
+          Scrap metal press shears: what they are, types, applications, operating principles, and how to choose
+        </h3>
+        <div class="flex items-center justify-between text-xs text-gray-500">
+          <span>June 26, 2026</span>
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-8 h-[280px] flex flex-col justify-between hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
+        <h3 class="text-base font-bold text-pzo-textPrimary leading-snug">
+          What is a pallet wrapper? How does it work and what types are there? What is a palletizer?
+        </h3>
+        <div class="flex items-center justify-between text-xs text-gray-500">
+          <span>April 7, 2026</span>
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="bg-pzo-cardBg rounded-[28px] p-8 h-[280px] flex flex-col justify-between hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
+        <h3 class="text-base font-bold text-pzo-textPrimary leading-snug">
+          What are alligator scissors?
+        </h3>
+        <div class="flex items-center justify-between text-xs text-gray-500">
+          <span>March 5, 2026</span>
+          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 11: INDUSTRIAL NAVY FOOTER ================= -->
+  <footer class="bg-pzo-footerBg text-white pt-16 pb-12 border-t border-gray-800">
+    <div class="max-w-[1440px] mx-auto px-6">
+      
+      <!-- Main Footer Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-gray-800">
+        
+        <!-- Col 1: Logo & Social Media Desks -->
+        <div class="lg:col-span-4 space-y-8">
+          <div class="flex items-center space-x-3.5">
+            <svg class="h-10 w-auto" viewBox="0 0 120 70" fill="none">
+              <path d="M5 5 H25 V65 H5 Z" fill="#FFFFFF"/>
+              <path d="M25 5 H45 C55 5 62 12 62 22 C62 32 55 38 45 38 H25 Z" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round"/>
+              <path d="M55 65 L85 5 H105 L75 65 Z" fill="#FFFFFF"/>
+              <rect x="75" y="18" width="32" height="32" transform="rotate(45 75 18)" stroke="#FFFFFF" stroke-width="9"/>
+            </svg>
+            <div class="flex flex-col border-l border-gray-600 pl-3">
+              <span class="text-[9px] font-bold text-white uppercase leading-tight tracking-tight">ПОДОЛЬСКИЙ ЗАВОД</span>
+              <span class="text-[9px] font-bold text-white uppercase leading-tight tracking-tight">ОБОРУДОВАНИЯ</span>
+            </div>
+          </div>
+
+          <!-- Social networks -->
+          <div>
+            <div class="text-xs text-gray-400 mb-3">We are on social networks:</div>
+            <div class="flex items-center space-x-3">
+              <!-- VK -->
+              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">VK</a>
+              <!-- Telegram -->
+              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">TG</a>
+            </div>
+          </div>
+
+          <!-- Watch the video -->
+          <div>
+            <div class="text-xs text-gray-400 mb-3">Watch the video:</div>
+            <div class="flex items-center space-x-3">
+              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">YT</a>
+              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">RT</a>
+              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">PL</a>
+              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">+</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Company Navigation -->
+        <div class="lg:col-span-3">
+          <h4 class="text-base font-bold text-white mb-6">Company</h4>
+          <ul class="space-y-3 text-xs text-gray-400">
+            <li><a href="#" class="hover:text-white transition">About the company</a></li>
+            <li><a href="#" class="hover:text-white transition">Delivery</a></li>
+            <li><a href="#" class="hover:text-white transition">Customer service</a></li>
+            <li><a href="#" class="hover:text-white transition">Become a dealer</a></li>
+            <li><a href="#" class="hover:text-white transition">Vacancies</a></li>
+            <li><a href="#" class="hover:text-white transition">News</a></li>
+            <li><a href="#" class="hover:text-white transition">Articles</a></li>
+            <li><a href="#" class="hover:text-white transition">Complaints and suggestions</a></li>
+            <li><a href="#" class="hover:text-white transition">Details</a></li>
+            <li><a href="#" class="hover:text-white transition">Warranty Declaration</a></li>
+            <li><a href="#" class="hover:text-white transition">Video reviews</a></li>
+            <li><a href="#" class="hover:text-white transition">Production Cases</a></li>
+            <li><a href="#" class="hover:text-white transition">Licenses and certificates</a></li>
+            <li><a href="#" class="hover:text-white transition">Managers</a></li>
+            <li><a href="#" class="hover:text-white transition">Stock</a></li>
+            <li><a href="#" class="hover:text-white transition">Sales</a></li>
+            <li><a href="#" class="hover:text-white transition">Equipment selection</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Catalog & Solutions -->
+        <div class="lg:col-span-2">
+          <h4 class="text-base font-bold text-white mb-6">Catalog</h4>
+          <div class="space-y-4 text-xs text-gray-400">
+            <div><a href="#" class="hover:text-white transition font-medium">Ready-made solutions</a></div>
+          </div>
+        </div>
+
+        <!-- Col 4: Contacts Desk -->
+        <div class="lg:col-span-3">
+          <h4 class="text-base font-bold text-white mb-6">Contacts</h4>
+          <div class="space-y-3 text-xs text-gray-400">
+            <a href="mailto:sel@p-z-o.com" class="block text-white hover:underline font-semibold">sel@p-z-o.com</a>
+            <a href="tel:+74993900555" class="block text-sm font-bold text-white hover:underline">+7 (499) 390-05-55</a>
+            <p class="pt-2 text-gray-400 leading-relaxed">
+              Podolsk, ul. Pleshcheevskaya, 34<br>
+              Mon-Fri from 8:00 to 18:00 PM
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Legal & Copyright Bar -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-gray-500 gap-4">
+        <div class="flex flex-wrap items-center gap-6">
+          <a href="#" class="hover:text-gray-400 transition">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-400 transition">Protection of personal data</a>
+          <a href="#" class="hover:text-gray-400 transition">Rules for processing personal data</a>
+          <a href="#" class="hover:text-gray-400 transition">Consent to the processing of personal data</a>
+        </div>
+        <div class="flex items-center space-x-6">
+          <span>&copy; 2016-2026</span>
+          <!-- Scroll to top arrow button -->
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-white transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= INTERACTIVE SCRIPTS ================= -->
+  <script>
+    // Timeline Data Model
+    const milestones = [
+      { year: "2016", text: "The plant was founded, production facilities were equipped, and the launch of primary equipment series commenced." },
+      { year: "2017", text: "Created a network of regional branches in the field of polymer recycling and secondary raw material collection." },
+      { year: "2018", text: "Production expansion, factory floor modernization, and doubling of manufactured product lineup." },
+      { year: "2019", text: "Entered export markets, established cooperation with the Ministry of Industry and Trade, and grew dealer networks." },
+      { year: "2020", text: "R&D and production of turnkey recycling complexes capable of processing all standard polymer categories." },
+      { year: "2021", text: "Participation in premier international industrial expos, expanding global deliveries across Eurasia." },
+      { year: "2022", text: "Developed high-tonnage scrap balers and opened an engineering branch in Tula." },
+      { year: "2023", text: "Modernized machine tool fleet, increased factory output capacity, and launched automated horizontal balers." },
+      { year: "2024", text: "Introduced advanced packaging and warehouse equipment, including high-speed orbital and stretch pallet wrappers." },
+      { year: "2025", text: "Released heavy-duty metal scrap shears and expanded continuous baling press automation lines." }
+    ];
+
+    let currentMilestone = 0;
+
+    function setMilestone(index) {
+      currentMilestone = index;
+      document.getElementById('timelineYear').innerText = milestones[index].year;
+      document.getElementById('timelineDesc').innerText = milestones[index].text;
+
+      // Update dot active styles
+      const dots = document.querySelectorAll('.timeline-dot');
+      dots.forEach((dot, idx) => {
+        const circle = dot.querySelector('span:first-child');
+        const label = dot.querySelector('span:last-child');
+        if (idx === index) {
+          circle.className = "w-3.5 h-3.5 rounded-full bg-pzo-navy ring-4 ring-blue-100 transition-all";
+          label.className = "text-xs font-bold text-pzo-textPrimary mt-2";
+        } else {
+          circle.className = "w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all";
+          label.className = "text-xs font-semibold text-gray-400 mt-2";
+        }
+      });
+    }
+
+    function nextMilestone() {
+      currentMilestone = (currentMilestone + 1) % milestones.length;
+      setMilestone(currentMilestone);
+    }
+
+    function prevMilestone() {
+      currentMilestone = (currentMilestone - 1 + milestones.length) % milestones.length;
+      setMilestone(currentMilestone);
+    }
+  </script>
+
+</body>
+</html>
