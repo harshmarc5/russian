@@ -1,1314 +1,1078 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Podolsk Machinery & Equipment Plant (PZO) | Official Site</title>
-  
-  <!-- Fonts: Montserrat & Inter for exact geometric grotesque typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            pzo: {
-              navy: '#1A2138',         // Exact primary navy button & footer tone
-              navyHover: '#13182b',
-              heroBg: '#DCE7F3',        // Soft ice-blue gradient base
-              cardBg: '#EDF3F9',        // Light ice-blue card background
-              cardHover: '#E4ECF4',
-              accentRed: '#EF4444',
-              accentGreen: '#10B981',
-              textPrimary: '#1A2138',
-              textSecondary: '#6B7685',
-              borderLight: '#E2E8F0',
-              inputBg: '#FFFFFF',
-              footerBg: '#1A2138'
-            }
-          },
-          fontFamily: {
-            sans: ['"Montserrat"', 'sans-serif'],
-            body: ['"Inter"', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      color: #1A2138;
-      overflow-x: hidden;
-      background-color: #FFFFFF;
-    }
-    .tight-title {
-      letter-spacing: -0.04em;
-    }
-    /* Clip path for the geometric PZO stencil cutout */
-    .pzo-stencil-mask {
-      clip-path: polygon(
-        0% 0%, 28% 0%, 28% 100%, 0% 100%, 0% 0%,
-        33% 0%, 55% 50%, 33% 100%, 46% 100%, 65% 55%, 65% 100%, 75% 100%, 75% 55%, 100% 55%, 100% 45%, 75% 45%, 75% 0%, 65% 0%, 46% 45%, 39% 0%
-      );
-    }
-    /* Hide scrollbars for slick carousels while allowing touch scroll */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
+    <title>Podolsk Machinery & Equipment Plant (PZO) – Industrial Equipment Manufacturing | Official Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="PZO Plant – manufacturing and sales of industrial equipment for enterprises and recycling facilities. Warranty service, spare parts, and dealer partnership. Over 300 turnkey recycling and packaging lines.">
+    
+    <meta name="theme-color" content="#1F2650">
+    <link rel="canonical" href="https://p-z-o.com/">
+
+    <link rel="icon" type="image/ico" sizes="32x32" href="static/favicon/32x32.ico">
+    <link rel="icon" type="image/ico" sizes="16x16" href="static/favicon/16x16.ico">
+    <link rel="shortcut icon" href="static/favicon/16x16.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/ios180x180.png">
+    <meta name="msapplication-TileColor" content="#1F2650">
+    <link rel="manifest" href="static/favicon/manifest.json">
+    <link rel="stylesheet" href="static/css/fonts.css">
+    <link rel="stylesheet" href="static/js/libs/select2/dist/css/select2.min.css">
+
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <link rel="stylesheet" href="static/css/style.css?v=1.1.5">
+    <link rel="stylesheet" href="static/css/media/style.max.1440.css?v=1.1.5">
+    <link rel="stylesheet" href="static/css/libs/slick.min.css">
+
+    <script src="static/js/libs/jquery.min.js"></script>
+    <script src="static/js/libs/slick.min.js"></script>
+    <script src="static/js/libs/select2/dist/js/select2.full.min.js"></script>
+    <script src="static/js/libs/htmx.js"></script>
+
+    <meta name="robots" content="all"/>
 </head>
-<body class="relative">
+<body>
 
-  <!-- ================= TOP UTILITY BAR ================= -->
-  <div class="bg-white border-b border-gray-100 text-[12px] text-pzo-textSecondary font-medium">
-    <div class="max-w-[1440px] mx-auto px-6 h-10 flex items-center justify-between">
-      
-      <!-- Left: City + Utility Nav Links -->
-      <div class="flex items-center space-x-6">
-        <div class="flex items-center space-x-1.5 text-pzo-textPrimary font-semibold cursor-pointer">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          <span>Moscow</span>
+<!-- Header Include -->
+<header>
+    <div class='back-light'>
+        <div class='top container'>
+            <div class='left'>
+                <button type='button' title='Select City' class='city-btn cityPopupBtn link'>
+                    Moscow / Export Desk
+                </button>
+                <div class='inner'>
+                    <a class='link' href="/delivery">Delivery</a>
+                    <a class='link' href="/services">Customer Service</a>
+                    <a class='link' href="/be-dealer">Become a Dealer</a>
+                    <a class='link hide' href="/vakancii">Careers</a>
+                    <a class='link' href="/o-kompanii">About the Company</a>
+                    <a class='link' href="/contacts">Contacts</a>
+                    <a class='link' href="/managers">Sales Engineers</a>
+                    <a class='link' href="/vse_video">Videos</a>
+                    <a class='link' href="/skidki-i-akcii">Special Pricing</a>
+                    <a class='link gradient-yellow' href="/catalog/novinki">New Items</a>
+                </div>
+            </div>
+            <div class='right'>
+                <a class='tel link' href="tel:+74993900555"> +7 (499) 390-05-55</a>
+            </div>
         </div>
-        <nav class="hidden xl:flex items-center space-x-5">
-          <a href="#delivery" class="hover:text-pzo-textPrimary transition">Delivery</a>
-          <a href="#service" class="hover:text-pzo-textPrimary transition">Customer service</a>
-          <a href="#dealer" class="hover:text-pzo-textPrimary transition">Become a dealer</a>
-          <a href="#about" class="hover:text-pzo-textPrimary transition">About the company</a>
-          <a href="#contacts" class="hover:text-pzo-textPrimary transition">Contacts</a>
-          <a href="#managers" class="hover:text-pzo-textPrimary transition">Managers</a>
-          <a href="#video" class="hover:text-pzo-textPrimary transition">Video</a>
-          <a href="#stock" class="hover:text-pzo-textPrimary transition">Stock</a>
-          <a href="#new" class="text-amber-500 font-bold hover:underline transition">New items</a>
-        </nav>
-      </div>
-
-      <!-- Right: Direct Sales Hotline -->
-      <div class="flex items-center space-x-4">
-        <a href="tel:+74993900555" class="text-[13px] font-bold text-pzo-textPrimary tracking-tight hover:opacity-80 transition">
-          +7 (499) 390-05-55
-        </a>
-      </div>
-
     </div>
-  </div>
+</header>
 
-  <!-- ================= MAIN STICKY HEADER ================= -->
-  <header class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm transition-all duration-200">
-    <div class="max-w-[1440px] mx-auto px-6 h-20 flex items-center justify-between gap-6">
-      
-      <!-- Brand Logo -->
-      <a href="#" class="flex items-center space-x-3.5 shrink-0">
-        <!-- Exact PZO Angular Monogram SVG -->
-        <svg class="h-10 w-auto" viewBox="0 0 120 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 5 H25 V65 H5 Z" fill="#1A2138"/>
-          <path d="M25 5 H45 C55 5 62 12 62 22 C62 32 55 38 45 38 H25 Z" stroke="#1A2138" stroke-width="12" stroke-linejoin="round"/>
-          <path d="M55 65 L85 5 H105 L75 65 Z" fill="#1A2138"/>
-          <rect x="75" y="18" width="32" height="32" transform="rotate(45 75 18)" stroke="#1A2138" stroke-width="9"/>
+<header class='mobile'>
+    <div class='content'>
+        <a href='/' class='logo'>
+            <img src="static/new_landing/icons/logoPZO.svg" alt="Podolsk Machinery & Equipment Plant Logo">
+        </a>
+        <button type='button' class='svg questPopupBtn'>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1013 19.625C12.8169 19.625 9.83867 17.8063 6.24809 14.2175C2.64376 10.6141 0.822341 7.6267 0.836014 5.33779C0.844341 3.82528 1.63726 3.0507 1.93517 2.76012C1.95076 2.74087 2.00392 2.68862 2.02226 2.67029C3.33676 1.35487 4.22317 0.823202 5.10501 0.833145C6.12892 0.847035 6.85767 1.61337 7.77984 2.58412C8.00809 2.82429 8.25559 3.08554 8.53151 3.36054C9.86984 4.69887 9.48851 5.79062 9.18234 6.66695L9.18198 6.66797C8.84847 7.62362 8.56054 8.44865 10.2888 10.1769C12.0194 11.9057 12.8444 11.617 13.7968 11.2805L13.8013 11.279C14.6778 10.9731 15.7654 10.5935 17.1033 11.9295C17.3577 12.184 17.6001 12.4151 17.8251 12.6296L17.8696 12.672C18.8449 13.5988 19.6149 14.3312 19.6279 15.3579C19.6388 16.2333 19.1071 17.1252 17.7944 18.4388L17.7046 18.525C17.414 18.8229 16.6403 19.6167 15.1269 19.625H15.1013Z" fill="#1F2650"/>
+            </svg>
+            <span class='visually-hidden'>Callback Request</span>
+        </button>
+    </div>
+</header>
+
+<div class='mobile-header'>
+    <button type='button' id='mobileMenuBtn' class='column'>
+        <svg class='burger' width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.025 6.5H19.1667" stroke="#1F2650" stroke-width="1.5"/>
+            <path d="M0.025 1H19.1667" stroke="#1F2650" stroke-width="1.5"/>
+            <path d="M0.025 12H19.1667" stroke="#1F2650" stroke-width="1.5"/>
         </svg>
-        <div class="flex flex-col border-l border-gray-300 pl-3">
-          <span class="text-[9px] font-bold text-pzo-textPrimary uppercase leading-tight tracking-tight">ПОДОЛЬСКИЙ ЗАВОД</span>
-          <span class="text-[9px] font-bold text-pzo-textPrimary uppercase leading-tight tracking-tight">ОБОРУДОВАНИЯ</span>
-        </div>
-      </a>
+        <span class='text'>Menu</span>
+    </button>
 
-      <!-- Pill CATALOG Trigger Button -->
-      <button onclick="toggleCatalogModal()" class="flex items-center space-x-2.5 border border-gray-200 hover:border-pzo-navy px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition group">
-        <svg class="w-4 h-4 text-pzo-textPrimary group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        <span>CATALOG</span>
-      </button>
+    <a href='/sravnenie' class='column'>
+        <svg class='srav-svg' width="20" height="22" viewBox="0 0 20 22" xmlns="http://www.w3.org/2000/svg">
+            <path class='srav' d="M3 9.54839V20M8 2V20M13 20V4.32258M18 20V7.22581" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class='text'>Compare</span>
+        <span class='count sravnenie-count'>0</span>
+    </a>
 
-      <!-- Pill Search Bar with Autocomplete Feel -->
-      <div class="flex-1 max-w-lg relative hidden md:block">
-        <div class="relative w-full">
-          <input 
-            type="text" 
-            placeholder="Search the site" 
-            class="w-full bg-[#F4F7FA] border border-transparent focus:border-gray-300 focus:bg-white text-xs rounded-full py-2.5 pl-10 pr-4 text-pzo-textPrimary placeholder-gray-400 outline-none transition"
-          />
-          <svg class="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        </div>
-      </div>
+    <a href='/izbrannoe' class='column'>
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.23l-7.78-7.78A5.5 5.5 0 0 1 12 5.67l.06.06.06-.06a5.5 5.5 0 0 1 7.78 7.78L12 21.23z"/>
+        </svg>
+        <span class='text'>Favorites</span>
+        <span class='count favorites-count'>0</span>
+    </a>
 
-      <!-- Action Icons (Wishlist, Compare, Cart) + Contact Us Button -->
-      <div class="flex items-center space-x-3 sm:space-x-4">
-        
-        <!-- Wishlist -->
-        <button class="w-10 h-10 rounded-full border border-gray-200 hover:border-pzo-navy flex items-center justify-center text-pzo-textPrimary transition relative">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-        </button>
+    <a href='/korzina' class='column'>
+        <svg class='cart-svg' width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <span class='text'>Cart</span>
+        <span class='count busket-count'>0</span>
+    </a>
 
-        <!-- Compare -->
-        <button class="w-10 h-10 rounded-full border border-gray-200 hover:border-pzo-navy flex items-center justify-center text-pzo-textPrimary transition relative">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-        </button>
+    <button type='button' class='column planSearchBtn'>
+        <svg class='search__svg' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.78 1.91a6.87 6.87 0 1 0 0 13.73 6.87 6.87 0 0 0 0-13.73zm8.15 14.95l-2.64-2.63" stroke="#1F2650" stroke-width="1.5"/>
+        </svg>
+        <span class='text'>Search</span>
+    </button>
+</div>
 
-        <!-- Cart -->
-        <button class="w-10 h-10 rounded-full border border-gray-200 hover:border-pzo-navy flex items-center justify-center text-pzo-textPrimary transition relative">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-        </button>
-
-        <!-- CONTACT US Button -->
-        <a href="#lead-form" class="bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold px-6 py-3 rounded-full uppercase tracking-wider transition shadow-sm">
-          CONTACT US
+<!-- Mobile Drawer Menu -->
+<div id='mobileMenu' class='mobile-menu'>
+    <div class='content'>
+        <a href='/' class='logo'>
+            <img src="static/new_landing/icons/logoPZO.svg" alt="Podolsk Machinery & Equipment Plant Logo">
         </a>
 
-      </div>
-
-    </div>
-  </header>
-
-  <!-- ================= HERO SECTION WITH GEOMETRIC STENCIL ================= -->
-  <section class="relative bg-gradient-to-b from-[#E6EEF7] via-[#EFF5FA] to-white pt-16 pb-24 overflow-hidden">
-    <div class="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[460px]">
-      
-      <!-- Left Hero Statement -->
-      <div class="lg:col-span-4 z-10">
-        <p class="text-lg md:text-xl font-medium text-pzo-textPrimary leading-relaxed max-w-sm">
-          We create reliable and modern industrial equipment for businesses and people.
-        </p>
-      </div>
-
-      <!-- Right Monogram Video/Photo Mask Cutout Window -->
-      <div class="lg:col-span-8 relative flex items-center justify-center">
-        <div class="relative w-full max-w-[760px] h-[340px] sm:h-[400px] rounded-3xl overflow-hidden shadow-2xl bg-slate-900 border-4 border-white/80">
-          <!-- Background machinery video / image simulation -->
-          <img 
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=80" 
-            alt="PZO Industrial Manufacturing Facility" 
-            class="w-full h-full object-cover object-center scale-105"
-          />
-          <div class="absolute inset-0 bg-blue-900/20 mix-blend-multiply"></div>
-          
-          <!-- Geometric PZO Stencil Overlay Frame -->
-          <div class="absolute inset-0 pointer-events-none flex items-center justify-center p-8">
-            <svg class="w-full h-full text-white/90 drop-shadow-md" viewBox="0 0 500 240" fill="none" stroke="currentColor" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
-              <!-- Geometric P -->
-              <path d="M 50,30 L 50,210 M 50,30 L 120,30 C 160,30 160,110 120,110 L 50,110" />
-              <!-- Geometric Z -->
-              <path d="M 180,30 L 290,30 L 180,210 L 290,210" />
-              <!-- Geometric O Diamond -->
-              <polygon points="390,30 470,120 390,210 310,120" />
-            </svg>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Floating Cookie Notice (Exact match to screenshot) -->
-    <div id="cookieNotice" class="fixed bottom-6 right-6 z-40 bg-white/95 backdrop-blur-md border border-gray-200 rounded-2xl shadow-xl p-4 flex items-center space-x-6 max-w-lg transition-all duration-300">
-      <p class="text-xs text-gray-600 leading-tight">
-        We use cookies to improve your experience on our website. Learn more: <a href="#" class="underline hover:text-pzo-navy">Cookie Policy</a> and <a href="#" class="underline hover:text-pzo-navy">Data Protection</a>.
-      </p>
-      <button onclick="document.getElementById('cookieNotice').remove()" class="bg-pzo-navy text-white text-xs font-bold px-5 py-2.5 rounded-xl uppercase tracking-wider shrink-0 hover:bg-pzo-navyHover transition">
-        ACCEPT
-      </button>
-    </div>
-  </section>
-
-  <!-- ================= SECTION 1: Industrialequipment production (3 Action Cards) ================= -->
-  <section class="max-w-[1440px] mx-auto px-6 py-8">
-    <h2 class="text-3xl md:text-4xl font-extrabold text-pzo-textPrimary tight-title mb-8">
-      Industrialequipment production
-    </h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
-      <!-- Card 1: Catalog -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-8 flex flex-col justify-between h-[300px] hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
-        <div>
-          <h3 class="text-2xl md:text-3xl font-bold text-pzo-textPrimary mb-8">Catalog</h3>
-          <div class="inline-block bg-white text-pzo-textPrimary font-semibold text-xs px-6 py-3 rounded-full shadow-sm">
-            Equipment selection
-          </div>
-        </div>
-        <div class="flex items-center justify-between text-xs text-gray-600 pt-6 border-t border-blue-100/50">
-          <span>We have over 300 product items available.</span>
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- Card 2: Contacts -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-8 flex flex-col justify-between h-[300px] hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
-        <div>
-          <h3 class="text-2xl md:text-3xl font-bold text-pzo-textPrimary">Contacts</h3>
-        </div>
-        <div class="flex items-center justify-between text-xs text-gray-600 pt-6 border-t border-blue-100/50">
-          <span>We will answer any questions</span>
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- Card 3: Become a dealer -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-8 flex flex-col justify-between h-[300px] hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
-        <div>
-          <h3 class="text-2xl md:text-3xl font-bold text-pzo-textPrimary">Become a dealer</h3>
-        </div>
-        <div class="flex items-center justify-between text-xs text-gray-600 pt-6 border-t border-blue-100/50">
-          <span>We invite dealers to cooperate</span>
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= SECTION 2: PRODUCT CATEGORIES GRID (Complete 24-Card Matrix) ================= -->
-  <section class="max-w-[1440px] mx-auto px-6 py-12">
-    <!-- Top Filter Header -->
-    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-pzo-textPrimary tight-title mb-6">
-          Product categories
-        </h2>
-        <div class="flex items-center space-x-3">
-          <button class="bg-pzo-navy text-white text-xs font-bold px-6 py-2.5 rounded-full uppercase tracking-wider shadow-sm">
-            CATEGORIES
-          </button>
-          <button class="border border-gray-300 hover:border-pzo-navy text-gray-700 text-xs font-semibold px-6 py-2.5 rounded-full uppercase tracking-wider transition">
-            BY APPOINTMENT
-          </button>
-        </div>
-      </div>
-      <button class="bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold px-6 py-3 rounded-full uppercase tracking-wider transition shadow-sm self-start sm:self-auto">
-        ALL CATEGORIES
-      </button>
-    </div>
-
-    <!-- 3-Column Product Category Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- 1. Horizontal presses -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Horizontal presses</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="Horizontal balers" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 2. Vertical presses -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Vertical presses</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Vertical hydraulic balers" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 3. Press compactors -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Press compactors</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80" alt="Press compactors" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 4. Interactive Callout: We will find the best solution -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-8 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200">
-        <div>
-          <h3 class="text-2xl font-bold text-pzo-textPrimary mb-4">We will find the best solution</h3>
-          <p class="text-xs text-gray-500 leading-relaxed">Our engineering department configures custom machinery according to your facility's technical specifications and daily throughput volume.</p>
-        </div>
-        <div>
-          <button class="bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold px-6 py-3 rounded-full uppercase tracking-wider transition shadow-sm">
-            SELECT EQUIPMENT
-          </button>
-        </div>
-      </div>
-
-      <!-- 5. Crushers & Granulators -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Crushers</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=400&q=80" alt="Industrial crushers and granulators" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 6. Single-shaft shredders -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Single-shaft shredders</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=400&q=80" alt="Single-shaft shredder" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 7. Twin-shaft shredders -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Twin-shaft shredders</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80" alt="Twin-shaft industrial shredders" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 8. Pallet wrappers -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Pallet wrappers</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=80" alt="Semi-automatic pallet wrappers" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 9. Orbital wrappers -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Orbital wrappers</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=400&q=80" alt="Orbital stretch wrapping machinery" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 10. Baling presses -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Baling presses</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="High-tonnage scrap baling presses" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 11. Strapping machine -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Strapping machine</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80" alt="Automatic strapping machines" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 12. Guillotines -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Guillotines</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Industrial hydraulic guillotines" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 13. Agglomerators -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Agglomerators</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=400&q=80" alt="Film and polymer agglomerators" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 14. Cyclones -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Cyclones</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80" alt="Cyclone dust and flake separators" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 15. Other equipment -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Other equipment</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80" alt="Auxiliary industrial equipment" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 16. Washing equipment -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Washing equipment</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="Polymer hot and friction washing tanks" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 17. Centrifuges -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Centrifuges</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=400&q=80" alt="High-speed dewatering centrifuges" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 18. Drying complexes -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Drying complexes</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80" alt="Hot-air pipe thermal dryers" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 19. Transport (Conveyors) -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Transport</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=80" alt="Belt conveyors and feeding loaders" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 20. Periphery -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Periphery</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Peripheral hopper loaders and dosing units" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 21. Alligator scissors -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Alligator scissors</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="Hydraulic alligator metal shears" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 22. Rubber processing equipment -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Rubber processing equipment</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80" alt="Tire shredders and crumb rubber plants" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 23. Spare parts -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Spare parts</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80" alt="OEM blades, screens, and hydraulic rams" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-      <!-- 24. Granulator -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-6 h-[340px] flex flex-col justify-between hover:shadow-lg transition duration-200 cursor-pointer group">
-        <h3 class="text-xl font-bold text-pzo-textPrimary">Granulator</h3>
-        <div class="flex-1 flex items-center justify-center py-2">
-          <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Single and twin-screw pelletizers" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="flex justify-end">
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= SECTION 3: Processing and packaging lines and complexes ================= -->
-  <section class="max-w-[1440px] mx-auto px-6 py-12">
-    <div class="flex items-center justify-between mb-8">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-pzo-textPrimary tight-title">
-        Processing and packaging lines and complexes
-      </h2>
-      <button class="bg-pzo-navy text-white text-xs font-bold px-6 py-3 rounded-full uppercase tracking-wider shadow-sm hover:bg-pzo-navyHover transition">
-        READY-MADE SOLUTIONS
-      </button>
-    </div>
-
-    <!-- 4 Lines Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      <!-- Line 1 -->
-      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
-        <div>
-          <div class="flex items-center justify-between mb-4">
-            <span class="inline-flex items-center text-[11px] font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
-              <span class="w-2 h-2 rounded-full bg-amber-500 mr-1.5 animate-pulse"></span>
-              Made to order
-            </span>
-            <button class="text-gray-300 hover:text-red-500 transition">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        <div class='flex'>
+            <button type='button' class='city-btn cityPopupBtn'>
+                Moscow / Export Desk
             </button>
-          </div>
-          <div class="h-40 flex items-center justify-center mb-4">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80" alt="Garbage and waste processing line" class="max-h-36 object-contain group-hover:scale-105 transition-transform duration-300">
-          </div>
-          <h4 class="text-sm font-bold text-pzo-textPrimary mb-6">
-            Garbage and waste processing line
-          </h4>
+            <a class='tel link big-text' href="tel:+74993900555"> +7 (499) 390-05-55</a>
         </div>
-        <button class="w-full border border-gray-300 hover:border-pzo-navy hover:text-white hover:bg-pzo-navy text-pzo-textPrimary text-xs font-bold py-3 rounded-full uppercase tracking-wider transition">
-          PLACE AN ORDER
-        </button>
-      </div>
 
-      <!-- Line 2 -->
-      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
-        <div>
-          <div class="flex items-center justify-between mb-4">
-            <span class="inline-flex items-center text-[11px] font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
-              <span class="w-2 h-2 rounded-full bg-amber-500 mr-1.5 animate-pulse"></span>
-              Made to order
-            </span>
-            <button class="text-gray-300 hover:text-red-500 transition">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        <div class='inner'>
+            <a class='link h3 gradient-yellow' href="/catalog/novinki">New Items</a>
+            <a class='link h3' href="/catalog">Catalog</a>
+            <a class='link h3' href="/linii">Ready-made Solutions</a>
+            <a class='link h3' href="/contacts">Contacts</a>
+        </div>
+        <div class='inner'>
+            <a class='link h3' href="/o-kompanii">About the Company</a>
+            <a class='link h3' href="/delivery">Delivery</a>
+            <a class='link h3' href="/services">Customer Service</a>
+            <a class='link h3' href="/be-dealer">Become a Dealer</a>
+            <a class='link h3' href="/skidki-i-akcii">Special Pricing</a>
+            <a class='link h3' href="/vse_video">Video Reviews</a>
+            <a class='link h3' href="/managers">Sales Engineers</a>
+            <a class='link h3' href="/vakancii">Careers</a>
+            <a class='link h3' href="/news">News</a>   
+            <a class='link h3' href="/statiy">Articles</a>
+            <a class='link h3' href="/deklaraciya-garantii">Warranty Declaration</a>
+            <a class='link h3' href="/rekvizity">Details</a>
+            <a class='link h3' href="/zhaloby-i-predlozheniya">Complaints and Suggestions</a>
+            <a class='link h3' href="/quiz/">Equipment Selection</a>
+        </div>
+
+        <div class='close-svg'>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M20 1.57L18.43 0 10 8.43 1.57 0 0 1.57 8.43 10 0 18.43 1.57 20 10 11.57 18.43 20 20 18.43 11.57 10 20 1.57z" fill="#1F2650"/></svg>
+        </div> 
+    </div>
+</div>
+
+<div class='bottom'>
+    <div class='back container'>
+        <div class='left'>
+            <a href='/' class='logo'>
+                <img src="static/new_landing/icons/logoPZO.svg" alt="Podolsk Machinery & Equipment Plant Logo">
+            </a>
+            <button type='button' onclick='showCatalog()' class='inv-btn'>
+                <span>Catalog</span>
             </button>
-          </div>
-          <div class="h-40 flex items-center justify-center mb-4">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="PET bottle to flexo recycling line" class="max-h-36 object-contain group-hover:scale-105 transition-transform duration-300">
-          </div>
-          <h4 class="text-sm font-bold text-pzo-textPrimary mb-6">
-            PET bottle to flexo recycling line
-          </h4>
-        </div>
-        <button class="w-full border border-gray-300 hover:border-pzo-navy hover:text-white hover:bg-pzo-navy text-pzo-textPrimary text-xs font-bold py-3 rounded-full uppercase tracking-wider transition">
-          PLACE AN ORDER
-        </button>
-      </div>
+            <div class='searchSvg planSearchBtn'>
+                <div class='searchWrapper'>
+                    <svg class='search__svg' width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M8.78 1.91a6.87 6.87 0 1 0 0 13.73 6.87 6.87 0 0 0 0-13.73zm8.15 14.95l-2.64-2.63" stroke="#1F2650" stroke-width="1.5"/></svg>
+                </div>
+            </div>
 
-      <!-- Line 3 -->
-      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
-        <div>
-          <div class="flex items-center justify-between mb-4">
-            <span class="inline-flex items-center text-[11px] font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
-              <span class="w-2 h-2 rounded-full bg-amber-500 mr-1.5 animate-pulse"></span>
-              Made to order
-            </span>
-            <button class="text-gray-300 hover:text-red-500 transition">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-            </button>
-          </div>
-          <div class="h-40 flex items-center justify-center mb-4">
-            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80" alt="Film material processing line" class="max-h-36 object-contain group-hover:scale-105 transition-transform duration-300">
-          </div>
-          <h4 class="text-sm font-bold text-pzo-textPrimary mb-6">
-            Film material processing line
-          </h4>
+            <div id='moveSearch' class='searchSvg'>
+                <div class='in'>
+                    <div class='back-svg'>
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"><path opacity="0.5" d="M0.29 7.29L6.65 15.07 8.07 13.65 2.41 8 8.07 2.34 6.65 0.93 0.29 7.29zM1 9h16V7H1v2z" fill="#1F2650"/></svg>
+                    </div>
+                    <form class='searchWrapper' action='/search'>
+                        <svg class='search__svg' width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M8.78 1.91a6.87 6.87 0 1 0 0 13.73 6.87 6.87 0 0 0 0-13.73zm8.15 14.95l-2.64-2.63" stroke="#1F2650" stroke-width="1.5"/></svg>
+                        <input id='search' class='search normal-text' name='q' type="search" placeholder='Search the site' autocomplete='off'>
+                    </form>
+                </div>
+            </div>
         </div>
-        <button class="w-full border border-gray-300 hover:border-pzo-navy hover:text-white hover:bg-pzo-navy text-pzo-textPrimary text-xs font-bold py-3 rounded-full uppercase tracking-wider transition">
-          PLACE AN ORDER
-        </button>
-      </div>
-
-      <!-- Line 4 -->
-      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
-        <div>
-          <div class="flex items-center justify-between mb-4">
-            <span class="inline-flex items-center text-[11px] font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
-              <span class="w-2 h-2 rounded-full bg-amber-500 mr-1.5 animate-pulse"></span>
-              Made to order
-            </span>
-            <button class="text-gray-300 hover:text-red-500 transition">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-            </button>
-          </div>
-          <div class="h-40 flex items-center justify-center mb-4">
-            <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=400&q=80" alt="Washing line for PS, ABS, PC, PVC" class="max-h-36 object-contain group-hover:scale-105 transition-transform duration-300">
-          </div>
-          <h4 class="text-sm font-bold text-pzo-textPrimary mb-6">
-            Washing line for PS, ABS, PC, PVC
-          </h4>
+        <div class='right'>
+            <div class='status'>
+                <a href='/izbrannoe' class='heart'>
+                    <span class='count favorites-count'>0</span>
+                    <span class='help_popup'>Favorites</span>
+                    <span class='visually-hidden'>Favorites</span>
+                </a>
+                <a href='/sravnenie' class='heart srav-icon'>
+                    <span class='count sravnenie-count'>0</span>
+                    <span class='help_popup'>Compare</span>
+                    <span class='visually-hidden'>Compare</span>
+                </a>
+                <a href='/korzina' class='heart cart-icon'>
+                    <span class='count busket-count'>0</span>
+                    <span class='help_popup'>Cart</span>
+                    <span class='visually-hidden'>Cart</span>
+                </a>
+            </div>
+            <button type='button' class='btn questPopupBtn'>CONTACT US</button>            
         </div>
-        <button class="w-full border border-gray-300 hover:border-pzo-navy hover:text-white hover:bg-pzo-navy text-pzo-textPrimary text-xs font-bold py-3 rounded-full uppercase tracking-wider transition">
-          PLACE AN ORDER
-        </button>
-      </div>
-
     </div>
-  </section>
+</div>
 
-  <!-- ================= SECTION 4: BEST DEALS (Machine Catalog Grid) ================= -->
-  <section class="max-w-[1440px] mx-auto px-6 py-12">
-    <div class="flex items-center justify-between mb-8">
-      <h2 class="text-3xl font-extrabold text-pzo-textPrimary tight-title">
-        Best deals
-      </h2>
-      <!-- Carousel Next/Prev Controls -->
-      <div class="flex items-center space-x-2">
-        <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition">
-          <svg class="w-4 h-4 text-pzo-textPrimary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-        </button>
-        <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition">
-          <svg class="w-4 h-4 text-pzo-textPrimary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-        </button>
-      </div>
+<!-- Main Hero Section -->
+<section class='main'>
+    <div class='container'>
+        <p class='big-text'>We create reliable and modern industrial equipment for businesses and people</p>
+        <div class='main-video mask'>
+            <img src="static/new_landing/img/postermain.jpg" alt="PZO Production" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+    </div>
+</section>
+
+<!-- Quick Action Cards Section -->
+<section class='catalog container'>
+    <h1 class='head'>Industrial equipment <br>production</h1>
+    <div class='new-wrapper'>
+        <div class='over-d-block'>
+            <a href='/catalog' class='d-block'>
+                <h2>Catalog</h2>
+                <div class='links'>
+                    <p class='normal-text'>We have over 300 product items available</p>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            <a class='abs_link' href="/quiz/">Equipment selection</a>
+        </div>
+
+        <a href='/contacts' class='d-block'>
+            <h2>Contacts</h2>
+            <div class='links'>
+                <p class='normal-text'>We will answer any questions</p>
+                <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+            </div>
+        </a>
+        
+        <a href='/be-dealer' class='d-block'>
+            <h2>Become a dealer</h2>
+            <div class='links'>
+                <p class='normal-text'>We invite dealers to cooperate</p>
+                <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+            </div>
+        </a>
+    </div>
+</section>
+
+<hr class='light'>
+
+<!-- Product Categories Section -->
+<section class='category container'>
+    <div class='upper'>
+        <h2>Product<br>categories</h2>
+        <a class='btn cbtn' href="/catalog">All categories</a>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-      <!-- Product 1 -->
-      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative group">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="inline-flex items-center text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
-              In stock
-            </span>
-            <div class="flex items-center space-x-2">
-              <button class="text-gray-300 hover:text-pzo-navy transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></button>
-              <button class="text-gray-300 hover:text-red-500 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></button>
-            </div>
-          </div>
-          <div class="h-48 flex items-center justify-center py-2">
-            <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Press PZO-4 mini" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-          </div>
-          <h4 class="text-sm font-bold text-pzo-textPrimary leading-snug mb-2">
-            Press PZO-4 (PGP-4) mini (compact), 380V
-          </h4>
-          <div class="text-lg font-black text-pzo-textPrimary mb-6">
-            205,536 ₽
-          </div>
-        </div>
-        <div class="flex items-center space-x-2">
-          <button class="flex-1 border border-gray-300 hover:border-pzo-navy text-pzo-textPrimary text-xs font-bold py-2.5 rounded-full uppercase tracking-wider transition">
-            REQUEST A QUOTE
-          </button>
-          <button class="w-10 h-10 rounded-full bg-pzo-navy hover:bg-pzo-navyHover text-white flex items-center justify-center transition shrink-0">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Product 2 -->
-      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative group">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="inline-flex items-center text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
-              In stock
-            </span>
-            <div class="flex items-center space-x-2">
-              <button class="text-gray-300 hover:text-pzo-navy transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></button>
-              <button class="text-gray-300 hover:text-red-500 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></button>
-            </div>
-          </div>
-          <div class="h-48 flex items-center justify-center py-2 relative">
-            <span class="absolute top-2 right-2 bg-pzo-navy text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
-              Top sales
-            </span>
-            <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=400&q=80" alt="Single-shaft shredder PZO SHR 600 n22" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-          </div>
-          <h4 class="text-sm font-bold text-pzo-textPrimary leading-snug mb-2">
-            Single-shaft shredder PZO SHR 600 n22
-          </h4>
-          <div class="text-lg font-black text-pzo-textPrimary mb-6">
-            1,723,800 ₽
-          </div>
-        </div>
-        <div class="flex items-center space-x-2">
-          <button class="flex-1 border border-gray-300 hover:border-pzo-navy text-pzo-textPrimary text-xs font-bold py-2.5 rounded-full uppercase tracking-wider transition">
-            REQUEST A QUOTE
-          </button>
-          <button class="w-10 h-10 rounded-full bg-pzo-navy hover:bg-pzo-navyHover text-white flex items-center justify-center transition shrink-0">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative group">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex items-center space-x-1.5">
-              <span class="inline-flex items-center text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
-                In stock
-              </span>
-              <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-md">- 19,584 ₽</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <button class="text-gray-300 hover:text-pzo-navy transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></button>
-              <button class="text-gray-300 hover:text-red-500 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></button>
-            </div>
-          </div>
-          <div class="h-48 flex items-center justify-center py-2 relative">
-            <div class="absolute top-2 right-2 flex flex-col space-y-1 items-end">
-              <span class="bg-gray-100 text-gray-700 text-[10px] font-bold px-2 py-0.5 rounded">New version</span>
-              <span class="bg-blue-50 text-blue-700 text-[10px] font-bold px-2 py-0.5 rounded">Prestretch up to 250%</span>
-            </div>
-            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=80" alt="Semi-automatic pallet wrapper PZO BPW-2000" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-          </div>
-          <h4 class="text-sm font-bold text-pzo-textPrimary leading-snug mb-2">
-            Semi-automatic pallet wrapper PZO BPW-2000
-          </h4>
-          <div class="flex items-baseline space-x-2 mb-6">
-            <span class="text-lg font-black text-pzo-textPrimary">298,000 ₽</span>
-            <span class="text-xs text-gray-400 line-through">317,584 ₽</span>
-          </div>
-        </div>
-        <div class="flex items-center space-x-2">
-          <button class="flex-1 border border-gray-300 hover:border-pzo-navy text-pzo-textPrimary text-xs font-bold py-2.5 rounded-full uppercase tracking-wider transition">
-            REQUEST A QUOTE
-          </button>
-          <button class="w-10 h-10 rounded-full bg-pzo-navy hover:bg-pzo-navyHover text-white flex items-center justify-center transition shrink-0">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Product 4 -->
-      <div class="bg-white border border-gray-200 rounded-[24px] p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative group">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="inline-flex items-center text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
-              In stock
-            </span>
-            <div class="flex items-center space-x-2">
-              <button class="text-gray-300 hover:text-pzo-navy transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></button>
-              <button class="text-gray-300 hover:text-red-500 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></button>
-            </div>
-          </div>
-          <div class="h-48 flex items-center justify-center py-2 relative">
-            <span class="absolute top-2 right-2 bg-pzo-navy text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
-              Top sales
-            </span>
-            <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=400&q=80" alt="AMD-600D crusher" class="max-h-44 object-contain group-hover:scale-105 transition-transform duration-300">
-          </div>
-          <h4 class="text-sm font-bold text-pzo-textPrimary leading-snug mb-2">
-            AMD-600D crusher
-          </h4>
-          <div class="text-lg font-black text-pzo-textPrimary mb-6">
-            234,874 ₽
-          </div>
-        </div>
-        <div class="flex items-center space-x-2">
-          <button class="flex-1 border border-gray-300 hover:border-pzo-navy text-pzo-textPrimary text-xs font-bold py-2.5 rounded-full uppercase tracking-wider transition">
-            REQUEST A QUOTE
-          </button>
-          <button class="w-10 h-10 rounded-full bg-pzo-navy hover:bg-pzo-navyHover text-white flex items-center justify-center transition shrink-0">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-          </button>
-        </div>
-      </div>
-
+    <div class='sols'>
+        <button type='button' data-id='0' class='btn active'>Categories</button>
+        <button type='button' class='btn' data-id='1'>By Appointment</button>
     </div>
-  </section>
 
-  <!-- ================= SECTION 5: THE HISTORY OF OUR DEVELOPMENT ================= -->
-  <section class="max-w-[1440px] mx-auto px-6 py-16">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      
-      <!-- Left Narrative + Year Stepper -->
-      <div class="lg:col-span-6">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-pzo-textPrimary tight-title mb-8">
-          The history of our development
-        </h2>
-
-        <!-- Navigation Arrows -->
-        <div class="flex items-center space-x-2 mb-10">
-          <button onclick="prevMilestone()" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition">
-            <svg class="w-4 h-4 text-pzo-textPrimary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-          </button>
-          <button onclick="nextMilestone()" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition">
-            <svg class="w-4 h-4 text-pzo-textPrimary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </button>
+    <div data-id='0' class='change-div active'>
+        <div class='grid normal'>            
+            <a href='/catalog/gorizontalnye-pressy' class='d-block'>
+                <h3>Horizontal presses</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/kat_goz/477b136f56063b7cebcb4e3028b39c6e.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/kat_goz/1bf263e98bd7716427f3207c9bd49575.png" alt="Horizontal Balers" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/vertikalnye-pressy' class='d-block'>
+                <h3>Vertical presses</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/press-pgp-zavod-thumb/0636f27b9125fd8b8568b0c4c6b71de3.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/press-pgp-zavod-thumb/c5990750ccf4d38550b9173d3d4347a7.png" alt="Vertical Presses" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/pressy-kompaktory' class='d-block'>
+                <h3>Press compactors</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/kompaktor-5030_tumb/8008e02efd9fc1efcba244c73540b494.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/kompaktor-5030_tumb/20430d60d7ea738fff5fd3e16c93d9dc.png" alt="Press Compactors" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
         </div>
-
-        <!-- Dynamic Year Milestone Text -->
-        <div class="mb-12">
-          <div id="timelineYear" class="text-3xl font-extrabold text-pzo-textPrimary mb-3">2016</div>
-          <p id="timelineDesc" class="text-sm text-gray-600 leading-relaxed max-w-md">
-            The plant was founded, production facilities were equipped, and the launch of primary baling equipment series commenced.
-          </p>
-        </div>
-
-        <!-- Horizontal Stepper Bar (2016 to 2025) -->
-        <div class="relative flex items-center justify-between border-t border-gray-200 pt-6">
-          <button onclick="setMilestone(0)" class="timeline-dot group flex flex-col items-center focus:outline-none">
-            <span class="w-3.5 h-3.5 rounded-full bg-pzo-navy ring-4 ring-blue-100 transition-all"></span>
-            <span class="text-xs font-bold text-pzo-textPrimary mt-2">2016</span>
-          </button>
-          <button onclick="setMilestone(1)" class="timeline-dot group flex flex-col items-center focus:outline-none">
-            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
-            <span class="text-xs font-semibold text-gray-400 mt-2">2017</span>
-          </button>
-          <button onclick="setMilestone(2)" class="timeline-dot group flex flex-col items-center focus:outline-none">
-            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
-            <span class="text-xs font-semibold text-gray-400 mt-2">2018</span>
-          </button>
-          <button onclick="setMilestone(3)" class="timeline-dot group flex flex-col items-center focus:outline-none">
-            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
-            <span class="text-xs font-semibold text-gray-400 mt-2">2019</span>
-          </button>
-          <button onclick="setMilestone(4)" class="timeline-dot group flex flex-col items-center focus:outline-none">
-            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
-            <span class="text-xs font-semibold text-gray-400 mt-2">2020</span>
-          </button>
-          <button onclick="setMilestone(5)" class="timeline-dot group flex flex-col items-center focus:outline-none">
-            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
-            <span class="text-xs font-semibold text-gray-400 mt-2">2021</span>
-          </button>
-          <button onclick="setMilestone(6)" class="timeline-dot group flex flex-col items-center focus:outline-none">
-            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
-            <span class="text-xs font-semibold text-gray-400 mt-2">2022</span>
-          </button>
-          <button onclick="setMilestone(7)" class="timeline-dot group flex flex-col items-center focus:outline-none">
-            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
-            <span class="text-xs font-semibold text-gray-400 mt-2">2023</span>
-          </button>
-          <button onclick="setMilestone(8)" class="timeline-dot group flex flex-col items-center focus:outline-none">
-            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
-            <span class="text-xs font-semibold text-gray-400 mt-2">2024</span>
-          </button>
-          <button onclick="setMilestone(9)" class="timeline-dot group flex flex-col items-center focus:outline-none">
-            <span class="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all"></span>
-            <span class="text-xs font-semibold text-gray-400 mt-2">2025</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Right Plant Facility Aerial Photo -->
-      <div class="lg:col-span-6">
-        <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-200">
-          <img id="timelineImg" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" alt="PZO Facility Aerial View" class="w-full h-[400px] object-cover">
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= SECTION 6: CONSULTATION / LEAD FORM (Any questions left?) ================= -->
-  <section id="lead-form" class="max-w-[1440px] mx-auto px-6 py-16">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-      
-      <!-- Left Header -->
-      <div class="lg:col-span-5 flex flex-col justify-between h-full pt-4">
-        <div>
-          <h2 class="text-4xl md:text-5xl font-extrabold text-pzo-textPrimary tight-title leading-tight mb-4">
-            Any questions left<br>?
-          </h2>
-        </div>
-        <p class="text-xs text-gray-500 max-w-sm mt-12 lg:mt-32 leading-relaxed">
-          We will answer any of your questions regarding the production and maintenance of machines and equipment.
-        </p>
-      </div>
-
-      <!-- Right Form Box -->
-      <div class="lg:col-span-7 bg-[#F4F7FA] rounded-[32px] p-8 md:p-12">
-        <h3 class="text-base font-bold text-pzo-textPrimary mb-8">
-          Fill out the form and we will contact you shortly.
-        </h3>
-
-        <form class="space-y-6" onsubmit="event.preventDefault(); alert('Request received. Our engineering specialist will reach out shortly.');">
-          <!-- Name -->
-          <div>
-            <label class="block text-xs font-bold text-gray-700 mb-2">Name *</label>
-            <input type="text" placeholder="Enter your name" required class="w-full bg-white border border-gray-200 text-xs rounded-xl py-3.5 px-4 outline-none focus:border-pzo-navy transition" />
-          </div>
-
-          <!-- Phone Number with Russia / Global Country Picker -->
-          <div>
-            <label class="block text-xs font-bold text-gray-700 mb-2">Phone number *</label>
-            <div class="flex">
-              <div class="flex items-center space-x-1 bg-white border border-r-0 border-gray-200 rounded-l-xl px-3 text-xs text-gray-700">
-                <span>🇷🇺</span>
-                <span class="text-gray-400">&#9662;</span>
-              </div>
-              <input type="tel" placeholder="+7 (000) 000-00-00" required class="flex-1 bg-white border border-gray-200 text-xs rounded-r-xl py-3.5 px-4 outline-none focus:border-pzo-navy transition" />
+        
+        <div class='grid right anti-normal'>            
+            <div class='d-block'>
+                <p class='h3'>We will find the best solution</p>
+                <a class='btn' style='width: 100%; text-align: center' href="/quiz/">Select Equipment</a>
             </div>
-          </div>
+            
+            <a href='/catalog/drobilki' class='d-block'>
+                <h3>Crushers</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/drobilka-pzo/59cb984e5708fad82138fb2dae82ebb6.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/drobilka-pzo/76eb45fee8d1068a5fb40ba06a8fb620.png" alt="Crushers" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/odnovalnye-shredery' class='d-block'>
+                <h3>Single-shaft shredders</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/shreder-odn/d8beaf518f3582103cdc963d0559720d.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/shreder-odn/b464ba1e7a58583857360b5224371030.png" alt="Single-shaft Shredders" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+        </div>
+        
+        <div class='grid left'>            
+            <a href='/catalog/dvuhvalnye-shredery' class='d-block'>
+                <h3>Twin-shaft shredders</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/dvuh/a7832e741f2cc7d3d19b2557fc5214bd.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/dvuh/16db3dcb96062f74bfeea41fe85a127c.png" alt="Twin-shaft Shredders" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/palletoobmotchik' class='d-block'>
+                <h3>Pallet wrappers</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/cat-pallet_5tvydM7/03144d8dd87fbee6326378cf1f3b698b.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/cat-pallet_5tvydM7/4818040e0e56b3f8c9e34b3087204279.png" alt="Pallet Wrappers" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+        </div>
+        
+        <div class='grid normal'>            
+            <a href='/catalog/orbitalnye-obmotchiki' class='d-block'>
+                <h3>Orbital wrappers</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/orbitalny-obmotchik/e180463a2aac715f55aa6a1d2da3482f.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/orbitalny-obmotchik/4a24f19bccc34d7b4a2955c0ada77f07.png" alt="Orbital Wrappers" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/paketirovochnye-pressy' class='d-block'>
+                <h3>Baling presses</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/paketirovschiks-press/8b6dad3e39c4277f91c3be6febc4b3f3.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/paketirovschiks-press/e92f1db4e39b723767b4689df871c1b2.png" alt="Baling Presses" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/strepping-mashiny' class='d-block'>
+                <h3>Strapping machine</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/strepping-machine-5/c61276cfd31c48ebb517cf9f18c5070c.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/strepping-machine-5/a4cd5097d6a83b84b0eb994575c8d49e.png" alt="Strapping Machine" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+        </div>
+        
+        <div class='grid right'>            
+            <a href='/catalog/gilotina' class='d-block'>
+                <h3>Guillotines</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/gilotina-pzo/596968cbb101532534d730016397b444.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/gilotina-pzo/ee6952347629e405f65371ec665a16bf.png" alt="Guillotines" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/aglomeratory' class='d-block'>
+                <h3>Agglomerators</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/aglomerator-pzo/da6c8c939119619d96b203e5d9415287.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/aglomerator-pzo/b3b30bc30310d2e490057afb4ab786a7.png" alt="Agglomerators" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+        </div>
+        
+        <div class='grid left'>            
+            <a href='/catalog/ciklony' class='d-block'>
+                <h3>Cyclones</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/ciklon-pzo-pnevmotransport/73c2c4fe0db3e548d973117e870c77de.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/ciklon-pzo-pnevmotransport/31f056b156e771af4bd2ed131f8271b1.png" alt="Cyclones" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/dopolnitelnoe-oborudovanie' class='d-block'>
+                <h3>Other equipment</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/dopolnitelnoe-oborudovanie-pzo/026bfc10b3d44fd93f1f67e8156a21fb.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/dopolnitelnoe-oborudovanie-pzo/3be7976dc9e66b163bd3a3c187654179.png" alt="Other Equipment" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+        </div>
+        
+        <div class='grid normal'>            
+            <a href='/catalog/linii-mojki' class='d-block'>
+                <h3>Washing equipment</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/moika-pzo/642706bd68171c77348353dde350effa.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/moika-pzo/15e3f65b9d600ed8d40bfaf11a0bd8c5.png" alt="Washing Equipment" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/centrifugi' class='d-block'>
+                <h3>Centrifuges</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/tsentrifuga-pzo/ec6bc846c50d40245b5fb6e3feb3612c.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/tsentrifuga-pzo/79d56d31ed845c8b94565b442b06f3f1.png" alt="Centrifuges" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/sushilnye-kompleksy' class='d-block'>
+                <h3>Drying complexes</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/suhka-spiralnaya-pzo/ed1171ba52d109f9e75e862fdbe5ac51.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/suhka-spiralnaya-pzo/2074bd772a65c5dddd260a5dc0150a7e.png" alt="Drying Complexes" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+        </div>
+        
+        <div class='grid right'>            
+            <a href='/catalog/transportery' class='d-block'>
+                <h3>Transport</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/kat_goz/477b136f56063b7cebcb4e3028b39c6e.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/kat_goz/1bf263e98bd7716427f3207c9bd49575.png" alt="Conveyors" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/perefiriinoe-oborudovanie' class='d-block'>
+                <h3>Periphery</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/dopolnitelnoe-oborudovanie-pzo/026bfc10b3d44fd93f1f67e8156a21fb.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/dopolnitelnoe-oborudovanie-pzo/3be7976dc9e66b163bd3a3c187654179.png" alt="Periphery" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+        </div>
+        
+        <div class='grid left'>            
+            <a href='/catalog/alligatornye_nozhnicy' class='d-block'>
+                <h3>Alligator scissors</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/gilotina-pzo/596968cbb101532534d730016397b444.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/gilotina-pzo/ee6952347629e405f65371ec665a16bf.png" alt="Alligator Shears" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/oborudovanie-dlya-pererabotki-shin-i-reziny' class='d-block'>
+                <h3>Rubber processing equipment</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/shreder-odn/d8beaf518f3582103cdc963d0559720d.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/shreder-odn/b464ba1e7a58583857360b5224371030.png" alt="Rubber Processing Equipment" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+        </div>
+        
+        <div class='grid normal'>            
+            <a href='/catalog/zapchasti-i-komplektuyschie' class='d-block'>
+                <h3>Spare parts</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/dopolnitelnoe-oborudovanie-pzo/026bfc10b3d44fd93f1f67e8156a21fb.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/dopolnitelnoe-oborudovanie-pzo/3be7976dc9e66b163bd3a3c187654179.png" alt="Spare Parts" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+            
+            <a href='/catalog/granulyator' class='d-block'>
+                <h3>Granulator</h3>
+                <div class='links'>
+                    <picture>
+                        <source srcset="media/CACHE/images/images/drobilka-pzo/59cb984e5708fad82138fb2dae82ebb6.webp" type="image/webp">
+                        <img src="media/CACHE/images/images/drobilka-pzo/76eb45fee8d1068a5fb40ba06a8fb620.png" alt="Granulator" loading="lazy">
+                    </picture>
+                    <svg class='cart__line' width="29" height="29" viewBox="0 0 29 29" fill="none"><path d="M24.3 1.56H27.43V27.43H1.56V24.3H24.3V1.56z" fill="#1F2650"/><line x1="24.98" y1="25.1" x2="1.98" y2="4.1" stroke="#1F2650" stroke-width="3"/></svg>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
 
-          <!-- Email -->
-          <div>
-            <label class="block text-xs font-bold text-gray-700 mb-2">Email *</label>
-            <input type="email" placeholder="sel@p-z-o.com" required class="w-full bg-white border border-gray-200 text-xs rounded-xl py-3.5 px-4 outline-none focus:border-pzo-navy transition" />
-          </div>
+<!-- Turnkey Processing Lines -->
+<section class='line default-section-padding sliceLine'>
+    <div class='container'>
+        <div class='upper'>
+            <h2>Processing and packaging lines<br>and complexes</h2>
+            <a class='btn' href="/linii">Ready-made solutions</a>
+        </div>
+        
+        <div class='wrapper slick-wrapper' data-slickcount='4'>
+            <!-- Line 1 -->
+            <div class='block block-pk commerce-product'>
+                <div class='up'><p class='stock red small-text'>Made to order</p></div>
+                <div class='down'>
+                    <div class='a-img'>
+                        <a href="#" class='trio'>
+                            <picture>
+                                <source srcset="media/CACHE/images/images/kat_goz/477b136f56063b7cebcb4e3028b39c6e.webp" type="image/webp">
+                                <img class="img" src="media/CACHE/images/images/kat_goz/1bf263e98bd7716427f3207c9bd49575.png" alt="Waste Recycling Line">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class='line_text'>
+                        <a href='#' class='name big-text'>Garbage and waste processing line</a>
+                        <div class='buttons'>
+                            <button type='button' class='inv-btn line-btn'>Place an order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <!-- Question -->
-          <div>
-            <label class="block text-xs font-bold text-gray-700 mb-2">Question</label>
-            <textarea rows="3" placeholder="Write your question" class="w-full bg-white border border-gray-200 text-xs rounded-xl py-3.5 px-4 outline-none focus:border-pzo-navy transition"></textarea>
-          </div>
+            <!-- Line 2 -->
+            <div class='block block-pk commerce-product'>
+                <div class='up'><p class='stock red small-text'>Made to order</p></div>
+                <div class='down'>
+                    <div class='a-img'>
+                        <a href="#" class='trio'>
+                            <picture>
+                                <source srcset="media/CACHE/images/images/moika-pzo/642706bd68171c77348353dde350effa.webp" type="image/webp">
+                                <img class="img" src="media/CACHE/images/images/moika-pzo/15e3f65b9d600ed8d40bfaf11a0bd8c5.png" alt="PET Flake Line">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class='line_text'>
+                        <a href='#' class='name big-text'>PET bottle to flexo recycling line</a>
+                        <div class='buttons'>
+                            <button type='button' class='inv-btn line-btn'>Place an order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <!-- Consent Checkbox -->
-          <div class="flex items-start space-x-3 pt-2">
-            <input type="checkbox" required id="consentCheck" class="mt-1 h-4 w-4 rounded border-gray-300 text-pzo-navy focus:ring-pzo-navy">
-            <label for="consentCheck" class="text-[11px] text-gray-500 leading-tight">
-              I agree to the <a href="#" class="underline text-gray-700">processing of my personal data</a>. I have read and agree with the terms of the <a href="#" class="underline text-gray-700">Privacy Policy</a>. I have read the Policy regarding the <a href="#" class="underline text-gray-700">processing of personal data</a>.
-            </label>
-          </div>
+            <!-- Line 3 -->
+            <div class='block block-pk commerce-product'>
+                <div class='up'><p class='stock red small-text'>Made to order</p></div>
+                <div class='down'>
+                    <div class='a-img'>
+                        <a href="#" class='trio'>
+                            <picture>
+                                <source srcset="media/CACHE/images/images/suhka-spiralnaya-pzo/ed1171ba52d109f9e75e862fdbe5ac51.webp" type="image/webp">
+                                <img class="img" src="media/CACHE/images/images/suhka-spiralnaya-pzo/2074bd772a65c5dddd260a5dc0150a7e.png" alt="Film Material Line">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class='line_text'>
+                        <a href='#' class='name big-text'>Film material processing line</a>
+                        <div class='buttons'>
+                            <button type='button' class='inv-btn line-btn'>Place an order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <!-- Submit Button -->
-          <button type="submit" class="w-full bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold py-4 rounded-full uppercase tracking-wider transition shadow-sm">
-            SEND
-          </button>
+            <!-- Line 4 -->
+            <div class='block block-pk commerce-product'>
+                <div class='up'><p class='stock red small-text'>Made to order</p></div>
+                <div class='down'>
+                    <div class='a-img'>
+                        <a href="#" class='trio'>
+                            <picture>
+                                <source srcset="media/CACHE/images/images/tsentrifuga-pzo/ec6bc846c50d40245b5fb6e3feb3612c.webp" type="image/webp">
+                                <img class="img" src="media/CACHE/images/images/tsentrifuga-pzo/79d56d31ed845c8b94565b442b06f3f1.png" alt="Washing line for plastics">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class='line_text'>
+                        <a href='#' class='name big-text'>Washing line for PS, ABS, PC, PVC</a>
+                        <div class='buttons'>
+                            <button type='button' class='inv-btn line-btn'>Place an order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class='white'>
+
+<!-- Best Deals / Featured Products -->
+<section class='line default-section-padding slickSection'>
+    <div class='container'>
+        <div class='upper'>
+            <h2>Best <br> offers</h2>
+            <div class='arrows'></div>
+        </div>
+        
+        <div id='best' class='wrapper slick-wrapper slick_offer' data-slickcount='8'>
+            <!-- Machine 1 -->
+            <div class='block block-pk commerce-product'>
+                <div class='up'><p class='stock small-text'>In stock</p></div>
+                <div class='down'>
+                    <div class='a-img'>
+                        <a href="#" class='trio'>
+                            <picture>
+                                <source srcset="media/CACHE/images/images/press-pgp-zavod-thumb/0636f27b9125fd8b8568b0c4c6b71de3.webp" type="image/webp">
+                                <img class="img" src="media/CACHE/images/images/press-pgp-zavod-thumb/c5990750ccf4d38550b9173d3d4347a7.png" alt="Press PZO-4 mini">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class='line_text'>
+                        <a href='#' class='name big-text'>Press PZO-4 (PGP-4) mini (compact), 380V</a>
+                        <div>
+                            <p class='price big-text'>205 536 ₽</p>
+                            <div class='buttons'>
+                                <button type='button' class='inv-btn oneClickKPBtn'>Request a Quote</button>
+                                <button type='button' class='heart busket'><p class='s-text'>Add to cart</p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Machine 2 -->
+            <div class='block block-pk commerce-product'>
+                <div class='up'><p class='stock small-text'>In stock</p></div>
+                <div class='down'>
+                    <div class='a-img'>
+                        <a href="#" class='trio'>
+                            <picture>
+                                <source srcset="media/CACHE/images/images/shreder-odn/d8beaf518f3582103cdc963d0559720d.webp" type="image/webp">
+                                <img class="img" src="media/CACHE/images/images/shreder-odn/b464ba1e7a58583857360b5224371030.png" alt="Shredder PZO SHR 600">
+                            </picture>
+                            <div class='layout'><span>Top sales</span></div>
+                        </a>
+                    </div>
+                    <div class='line_text'>
+                        <a href='#' class='name big-text'>Single-shaft shredder PZO SHR 600 n22</a>
+                        <div>
+                            <p class='price big-text'>1 723 800 ₽</p>
+                            <div class='buttons'>
+                                <button type='button' class='inv-btn oneClickKPBtn'>Request a Quote</button>
+                                <button type='button' class='heart busket'><p class='s-text'>Add to cart</p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Machine 3 -->
+            <div class='block block-pk commerce-product'>
+                <div class='up'>
+                    <p class='stock small-text'>In stock</p>
+                    <p class='discount small-text'>- 19 584 ₽</p>
+                </div>
+                <div class='down'>
+                    <div class='a-img'>
+                        <a href="#" class='trio'>
+                            <picture>
+                                <source srcset="media/CACHE/images/images/cat-pallet_5tvydM7/03144d8dd87fbee6326378cf1f3b698b.webp" type="image/webp">
+                                <img class="img" src="media/CACHE/images/images/cat-pallet_5tvydM7/4818040e0e56b3f8c9e34b3087204279.png" alt="Pallet wrapper BPW-2000">
+                            </picture>
+                            <div class='layout'><span>New version</span><span> Prestretch up to 250%</span></div>
+                        </a>
+                    </div>
+                    <div class='line_text'>
+                        <a href='#' class='name big-text'>Semi-automatic pallet wrapper PZO BPW-2000</a>
+                        <div>
+                            <p class='price big-text'>298 000 ₽<span class='sale normal-text'>317 584 ₽</span></p>
+                            <div class='buttons'>
+                                <button type='button' class='inv-btn oneClickKPBtn'>Request a Quote</button>
+                                <button type='button' class='heart busket'><p class='s-text'>Add to cart</p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Machine 4 -->
+            <div class='block block-pk commerce-product'>
+                <div class='up'><p class='stock small-text'>In stock</p></div>
+                <div class='down'>
+                    <div class='a-img'>
+                        <a href="#" class='trio'>
+                            <picture>
+                                <source srcset="media/CACHE/images/images/drobilka-pzo/59cb984e5708fad82138fb2dae82ebb6.webp" type="image/webp">
+                                <img class="img" src="media/CACHE/images/images/drobilka-pzo/76eb45fee8d1068a5fb40ba06a8fb620.png" alt="Crusher AMD-600D">
+                            </picture>
+                            <div class='layout'><span>Top sales</span></div>
+                        </a>
+                    </div>
+                    <div class='line_text'>
+                        <a href='#' class='name big-text'>AMD-600D crusher</a>
+                        <div>
+                            <p class='price big-text'>234 874 ₽</p>
+                            <div class='buttons'>
+                                <button type='button' class='inv-btn oneClickKPBtn'>Request a Quote</button>
+                                <button type='button' class='heart busket'><p class='s-text'>Add to cart</p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- History Timeline Section -->
+<section class='history container slickSection'>
+    <div class='wrapper'>
+        <div class='left'>
+            <h2>The history of our development</h2>
+            <div class='down'>
+                <div class='arrows'>
+                    <button type='button' title='Arrow left' class='slick-prev'>
+                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none"><path d="M8 16L0 8l8-8" stroke="#1F2650" stroke-width="2"/></svg>                      
+                    </button>
+                    <button type='button' title='Arrow right' class='slick-next'>
+                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none"><path d="M0 16l8-8-8-8" stroke="#1F2650" stroke-width="2"/></svg>       
+                    </button>
+                </div>
+
+                <div id='slick_history_text' class='slick-wrapper' data-slickcount='10'>
+                    <div><p class='h3'>2016</p><p class='text'>The plant was founded, production facilities were equipped, and equipment manufacturing commenced.</p></div>
+                    <div><p class='h3'>2017</p><p class='text'>Created a network of regional branches in polymer recycling and secondary raw material processing.</p></div>
+                    <div><p class='h3'>2018</p><p class='text'>Production expansion and significant increase in the manufactured machinery range.</p></div>
+                    <div><p class='h3'>2019</p><p class='text'>Export market expansion, active cooperation with trade ministries, and dealer network growth.</p></div>
+                    <div><p class='h3'>2020</p><p class='text'>Engineering and launch of automated turnkey recycling plants for polymers and enterprise waste.</p></div>
+                    <div><p class='h3'>2021</p><p class='text'>Participation in international industrial expos and expanded supply geography across Eurasia.</p></div>
+                    <div><p class='h3'>2022</p><p class='text'>R&D of new baling units and establishment of an engineering branch in Tula.</p></div>
+                    <div><p class='h3'>2023</p><p class='text'>Modernization of machine tool fleet and launch of automated horizontal baling systems.</p></div>
+                    <div><p class='h3'>2024</p><p class='text'>Launch of warehouse packaging machinery lines, pallet wrappers, and strapping systems.</p></div>
+                    <div><p class='h3'>2025</p><p class='text'>Release of specialized heavy-duty scrap metal processing shears and continuous baling presses.</p></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id='slick_history' class='right'>
+            <div class='boxImg'><img src="static/new_landing/img/postermain.jpg" alt="PZO Factory" loading='lazy'></div>
+        </div>
+    </div>
+
+    <div id="bar" class='bar'>
+        <button type='button' data-count='1' class='block current'><div class="circle active"></div><span class='year big-text'>2016</span></button>
+        <button type='button' data-count='2' class='block'><div class="circle"></div><span class='year big-text'>2017</span></button>
+        <button type='button' data-count='3' class='block'><div class="circle"></div><span class='year big-text'>2018</span></button>
+        <button type='button' data-count='4' class='block'><div class="circle"></div><span class='year big-text'>2019</span></button>
+        <button type='button' data-count='5' class='block'><div class="circle"></div><span class='year big-text'>2020</span></button>
+        <button type='button' data-count='6' class='block'><div class="circle"></div><span class='year big-text'>2021</span></button>
+        <button type='button' data-count='7' class='block'><div class="circle"></div><span class='year big-text'>2022</span></button>
+        <button type='button' data-count='8' class='block'><div class="circle"></div><span class='year big-text'>2023</span></button>
+        <button type='button' data-count='9' class='block'><div class="circle"></div><span class='year big-text'>2024</span></button>
+        <button type='button' data-count='10' class='block'><div class="circle"></div><span class='year big-text'>2025</span></button>
+    </div>
+</section>
+
+<!-- RFQ Form Section -->
+<section class='qwiz default-section-padding'>
+    <div class='wrapper container'>
+        <div class='left'>
+            <h2>Any questions <br>left?</h2>
+            <p class='normal-text'>We will answer any of your questions regarding the production and maintenance of machines and equipment.</p>
+        </div>
+        <form id='slickQwizQuest' class='right'>
+            <div class='block'>
+                <p class='h4'>Fill out the form and we will contact you shortly</p>
+                <div class='input'>
+                    <label class="form-text">
+                        <span class='name normal-text'>Name *</span>
+                        <input name='name' required type="text" placeholder='Enter your name'>
+                    </label>
+                </div>
+                <div class='input'>
+                    <label class="form-text">
+                        <span class='name normal-text'>Phone number *</span>
+                        <div class='phone-block'>
+                            <input class='sub-phone' name='phone' required type="tel" placeholder='+7 (000) 000-00-00'>
+                        </div>
+                    </label>
+                </div>
+                <div class='input'>
+                    <label class="form-text">
+                        <span class='name normal-text'>E-mail *</span>
+                        <input name='email' required type="email" placeholder='sel@p-z-o.com'>
+                    </label>
+                </div>
+                <div class='input'>
+                    <label class="form-text">
+                        <span class='name normal-text'>Question</span>
+                        <textarea name="comment" maxlength="1500" placeholder='Write your question'></textarea>
+                    </label>
+                </div>
+                <div class='help_flex form-radio-hidden'>
+                    <label>
+                        <input type="checkbox" name="agree" checked required>
+                        <span class="radio"></span>
+                    </label>
+                    <div class='help'>
+                        I agree to the <a href="#">processing of my personal data</a> and accept the terms of the <a href="#">Privacy Policy</a>.
+                    </div>
+                </div>
+                <button type='submit' title='Send' class='btn send'>SEND</button>
+            </div>
         </form>
-      </div>
+    </div> 
+</section>
 
+<!-- Partners Logo Wall -->
+<section class='partner container'>
+    <h2>Our partners</h2>
+    <div class='wrapper'>
+        <div class='block'><div class='img'><img src="media/images/ant-yapi.webp" alt="ANT YAPI"></div></div>
+        <div class='block'><div class='img'><img src="media/images/atol.png" alt="ATOL"></div></div>
+        <div class='block'><div class='img'><img src="media/images/azbuka-vkusa.png" alt="Azbuka Vkusa"></div></div>
+        <div class='block'><div class='img'><img src="media/images/baltika.png" alt="Baltika"></div></div>
+        <div class='block'><div class='img'><img src="media/images/beko.png" alt="Beko"></div></div>
+        <div class='block'><div class='img'><img src="media/images/bristol.png" alt="Bristol"></div></div>
+        <div class='block'><div class='img'><img src="media/images/campina.png" alt="Campina"></div></div>
+        <div class='block'><div class='img'><img src="media/images/chijik.png" alt="Chizhik"></div></div>
+        <div class='block'><div class='img'><img src="media/images/fix-price.png" alt="Fix Price"></div></div>
+        <div class='block'><div class='img'><img src="media/images/fm-logistik.jpg" alt="FM Logistic"></div></div>
+        <div class='block'><div class='img'><img src="media/images/gazprom.jpg" alt="Gazprom"></div></div>
+        <div class='block'><div class='img'><img src="media/images/goznak.jpg" alt="Goznak"></div></div>
+        <div class='block'><div class='img'><img src="media/images/haier.png" alt="Haier"></div></div>
+        <div class='block'><div class='img'><img src="media/images/haval.png" alt="HAVAL"></div></div>
+        <div class='block'><div class='img'><img src="media/images/hoff.jpg" alt="Hoff"></div></div>
+        <div class='block'><div class='img'><img src="media/images/karcher.png" alt="Kärcher"></div></div>
+        <div class='block'><div class='img'><img src="media/images/k-flex.png" alt="K-FLEX"></div></div>
+        <div class='block'><div class='img'><img src="media/images/knauf.png" alt="Knauf"></div></div>
+        <div class='block'><div class='img'><img src="media/images/komus.png" alt="Komus"></div></div>
+        <div class='block'><div class='img'><img src="media/images/kzto.jpg" alt="KZTO"></div></div>
+        <div class='block'><div class='img'><img src="media/images/liebherr.png" alt="Liebherr"></div></div>
+        <div class='block'><div class='img'><img src="media/images/lotte.png" alt="Lotte"></div></div>
+        <div class='block'><div class='img'><img src="media/images/mosstroy-31.png" alt="Mosstroy-31"></div></div>
+        <div class='block'><div class='img'><img src="media/images/msk-nt.png" alt="MSK-NT"></div></div>
     </div>
-  </section>
+</section>
 
-  <!-- ================= SECTION 7: OUR PARTNERS (Client Grid) ================= -->
-  <section class="max-w-[1440px] mx-auto px-6 py-12">
-    <h2 class="text-3xl font-extrabold text-pzo-textPrimary tight-title mb-10">
-      Our partners
-    </h2>
+<hr class='light'>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center">
-      <!-- 24 Monochrome partner brand badges matching the video screenshot -->
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-sm text-gray-500 tracking-wider">ANT YAPI</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-lg text-gray-800 tracking-tighter">ATO/L</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-serif text-xs text-gray-700">азбука вкуса</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-semibold text-sm text-gray-800 italic">БАЛТИКА</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-extrabold text-lg text-gray-900">beko</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-sm text-gray-700">Бристоль</div>
-
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-medium text-xs text-gray-600">Campina</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-xs text-gray-700">Чижик</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-sm text-gray-800">Fix Price</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-extrabold text-xs text-gray-700">FM LOGISTIC</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-semibold text-xs text-gray-700">ГАЗПРОМ НЕФТЬ</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-mono text-xs text-gray-600">ГОЗНАК</div>
-
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-lg text-gray-900">Haier</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-sm text-gray-800 tracking-widest">HAVAL</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-extrabold text-sm text-gray-900">Hoff</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-extrabold text-sm text-gray-900">KARCHER</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-xs text-gray-800">K-FLEX</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-medium text-xs text-gray-600">TOSHIBA</div>
-
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-xs text-gray-700">ПОЧТА РОССИИ</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-mono text-xs text-gray-800">RB LOGISTICS</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-sm text-gray-900">LIEBHERR</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-xs text-gray-700">РУСАЛ</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-sm text-gray-800">РЖД</div>
-      <div class="h-20 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center font-bold text-xs text-gray-700">СБЕР ЛОГИСТИКА</div>
-    </div>
-  </section>
-
-  <!-- ================= SECTION 8: WHY CHOOSE US ================= -->
-  <section class="max-w-[1440px] mx-auto px-6 py-16">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-      
-      <!-- Left Narrative -->
-      <div class="lg:col-span-5 flex flex-col justify-between h-full pt-4">
+<!-- Why Choose Us -->
+<section class='whywe container'>
+    <div class='left'>
+        <h2>Why<br>choose us</h2>
         <div>
-          <h2 class="text-4xl md:text-5xl font-extrabold text-pzo-textPrimary tight-title leading-tight mb-8">
-            Why<br>choose us
-          </h2>
-          <p class="text-xs text-gray-500 max-w-sm leading-relaxed mb-8">
-            Since 2016, we have been committed to creating the best equipment, leveraging our own experience, global best practices, and customer input.
-          </p>
+            <p class='normal-text'>Since 2016, we have been committed to creating the best equipment, leveraging our own experience, global best practices, and customer input.</p>
+            <a href="/o-kompanii" class='btn'>About the Company</a>
         </div>
-        <div>
-          <button class="bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold px-6 py-3.5 rounded-full uppercase tracking-wider transition shadow-sm">
-            ABOUT THE COMPANY
-          </button>
-        </div>
-      </div>
-
-      <!-- Right 4 Feature Cards Matrix with Light Watermark Icons -->
-      <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-        
-        <!-- 1. Own production -->
-        <div class="bg-pzo-cardBg rounded-[28px] p-8 h-56 flex flex-col justify-between relative overflow-hidden group">
-          <h3 class="text-xl font-bold text-pzo-textPrimary z-10">Own<br>production</h3>
-          <!-- Gear watermark icon -->
-          <svg class="w-32 h-32 text-blue-200/50 absolute -right-4 -bottom-4 z-0 group-hover:scale-110 group-hover:rotate-45 transition-all duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97c0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1c0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg>
-        </div>
-
-        <!-- 2. Wear-resistant equipment -->
-        <div class="bg-pzo-cardBg rounded-[28px] p-8 h-56 flex flex-col justify-between relative overflow-hidden group">
-          <h3 class="text-xl font-bold text-pzo-textPrimary z-10">Wear-resistant<br>equipment</h3>
-          <!-- Shield watermark icon -->
-          <svg class="w-32 h-32 text-blue-200/50 absolute -right-4 -bottom-4 z-0 group-hover:scale-110 transition-all duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-        </div>
-
-        <!-- 3. Delivery throughout Russia -->
-        <div class="bg-pzo-cardBg rounded-[28px] p-8 h-56 flex flex-col justify-between relative overflow-hidden group">
-          <h3 class="text-xl font-bold text-pzo-textPrimary z-10">Delivery<br>throughout Russia</h3>
-          <!-- Truck watermark icon -->
-          <svg class="w-32 h-32 text-blue-200/50 absolute -right-4 -bottom-4 z-0 group-hover:scale-110 group-hover:translate-x-2 transition-all duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M18 18.5a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5m1.5-9H17V12h4.5l-2-2.5M6 18.5A1.5 1.5 0 0 1 4.5 17A1.5 1.5 0 0 1 6 15.5A1.5 1.5 0 0 1 7.5 17A1.5 1.5 0 0 1 6 18.5M20 8h-3V4H3c-1.11 0-2 .89-2 2v11h2a3 3 0 0 0 3 3a3 3 0 0 0 3-3h6a3 3 0 0 0 3 3a3 3 0 0 0 3-3h2v-5l-3-4Z"/></svg>
-        </div>
-
-        <!-- 4. 1 year warranty -->
-        <div class="bg-pzo-cardBg rounded-[28px] p-8 h-56 flex flex-col justify-between relative overflow-hidden group">
-          <h3 class="text-xl font-bold text-pzo-textPrimary z-10">1 year warranty</h3>
-          <!-- Checkmark badge watermark icon -->
-          <svg class="w-32 h-32 text-blue-200/50 absolute -right-4 -bottom-4 z-0 group-hover:scale-110 transition-all duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="m10 17l-5-5l1.41-1.42L10 14.17l7.59-7.59L19 8m-7-6A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>
-        </div>
-
-      </div>
-
     </div>
-  </section>
-
-  <!-- ================= SECTION 9: VIDEO PLAYER BANNER ================= -->
-  <section class="max-w-[1440px] mx-auto px-6 py-8">
-    <div class="relative w-full h-[420px] rounded-[32px] overflow-hidden shadow-2xl bg-black flex items-center justify-center group cursor-pointer">
-      <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80" alt="Machinery lathe precision turning" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700">
-      
-      <!-- Central White Circular Play Button -->
-      <div class="w-20 h-20 rounded-full bg-white text-pzo-navy flex items-center justify-center pl-1 shadow-2xl group-hover:scale-110 transition-transform">
-        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SECTION 10: USEFUL ARTICLES ================= -->
-  <section class="max-w-[1440px] mx-auto px-6 py-16">
-    <div class="flex items-center justify-between mb-8">
-      <h2 class="text-3xl font-extrabold text-pzo-textPrimary tight-title">
-        Useful<br>articles
-      </h2>
-      <button class="bg-pzo-navy hover:bg-pzo-navyHover text-white text-xs font-bold px-6 py-3 rounded-full uppercase tracking-wider shadow-sm transition">
-        ALL ARTICLES
-      </button>
-    </div>
-
-    <!-- 3 Article Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
-      <!-- Article 1 -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-8 h-[280px] flex flex-col justify-between hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
-        <h3 class="text-base font-bold text-pzo-textPrimary leading-snug">
-          Scrap metal press shears: what they are, types, applications, operating principles, and how to choose
-        </h3>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>June 26, 2026</span>
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+    <div class='right'>
+        <div class='block'>
+            <p class='h4'>Own<br>production</p>
+            <div class='img'><img src="static/new_landing/img/shest.png" alt="Own production"></div>
         </div>
-      </div>
-
-      <!-- Article 2 -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-8 h-[280px] flex flex-col justify-between hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
-        <h3 class="text-base font-bold text-pzo-textPrimary leading-snug">
-          What is a pallet wrapper? How does it work and what types are there? What is a palletizer?
-        </h3>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>April 7, 2026</span>
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        <div class='block'>
+            <p class='h4'>Wear-resistant<br>equipment</p>
+            <div class='img'><img src="static/new_landing/img/shield.png" alt="Wear-resistant equipment"></div>
         </div>
-      </div>
-
-      <!-- Article 3 -->
-      <div class="bg-pzo-cardBg rounded-[28px] p-8 h-[280px] flex flex-col justify-between hover:bg-pzo-cardHover transition duration-200 cursor-pointer group">
-        <h3 class="text-base font-bold text-pzo-textPrimary leading-snug">
-          What are alligator scissors?
-        </h3>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>March 5, 2026</span>
-          <svg class="w-5 h-5 text-pzo-textPrimary group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19l-7-7m7 7H9m10 0V9"/></svg>
+        <div class='block'>
+            <p class='h4'>Delivery<br>throughout Russia</p>
+            <div class='img'><img src="static/new_landing/img/car.png" alt="Delivery throughout Russia"></div>
         </div>
-      </div>
-
+        <div class='block'>
+            <p class='h4'>1 year warranty</p>
+            <div class='img'><img src="static/new_landing/img/ok.png" alt="1 year warranty"></div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- ================= SECTION 11: INDUSTRIAL NAVY FOOTER ================= -->
-  <footer class="bg-pzo-footerBg text-white pt-16 pb-12 border-t border-gray-800">
-    <div class="max-w-[1440px] mx-auto px-6">
-      
-      <!-- Main Footer Columns -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-gray-800">
-        
-        <!-- Col 1: Logo & Social Media Desks -->
-        <div class="lg:col-span-4 space-y-8">
-          <div class="flex items-center space-x-3.5">
-            <svg class="h-10 w-auto" viewBox="0 0 120 70" fill="none">
-              <path d="M5 5 H25 V65 H5 Z" fill="#FFFFFF"/>
-              <path d="M25 5 H45 C55 5 62 12 62 22 C62 32 55 38 45 38 H25 Z" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round"/>
-              <path d="M55 65 L85 5 H105 L75 65 Z" fill="#FFFFFF"/>
-              <rect x="75" y="18" width="32" height="32" transform="rotate(45 75 18)" stroke="#FFFFFF" stroke-width="9"/>
-            </svg>
-            <div class="flex flex-col border-l border-gray-600 pl-3">
-              <span class="text-[9px] font-bold text-white uppercase leading-tight tracking-tight">ПОДОЛЬСКИЙ ЗАВОД</span>
-              <span class="text-[9px] font-bold text-white uppercase leading-tight tracking-tight">ОБОРУДОВАНИЯ</span>
+<!-- Video Feature -->
+<section id='company-video' class='video'>
+    <img class='poster' src="static/new_landing/img/postermain.jpg" alt="PZO Production Facility">
+    <img class='play-youtube' src="static/new_landing/icons/play.svg" alt="Play Video">
+</section>
+
+<!-- Useful Articles -->
+<section class='news'>
+    <div class='container'>
+        <div class='up'>
+            <h2>Useful<br>articles</h2>
+            <a class='btn' href="/statiy">All articles</a>
+        </div>
+        <div class='wrapper'>
+            <a href='#' class='block'>
+                <h3 class='h4'>Scrap metal press shears: what they are, types, applications, operating principles, and how to choose</h3>
+                <div class='links'><p class='date'>June 26, 2026</p></div>
+            </a>
+            <a href='#' class='block'>
+                <h3 class='h4'>What is a pallet wrapper? How does it work and what types are there? What is a palletizer?</h3>
+                <div class='links'><p class='date'>April 7, 2026</p></div>
+            </a>
+            <a href='#' class='block'>
+                <h3 class='h4'>What are alligator scissors?</h3>
+                <div class='links'><p class='date'>March 5, 2026</p></div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Desktop Footer -->
+<footer class='dekstop'>
+    <div class='container'>
+        <div class='wrapper'>
+            <div class='column column-1'>
+                <a href='/' class='img'>
+                    <img src="static/new_landing/img/logo.png" alt="Podolsk Machinery & Equipment Plant">
+                </a>
+                <div class='social'>
+                    <p>We are in social networks:</p>
+                    <div class='wrapper__social'>
+                        <a href="#" title='OK' class='soc ok'>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="white"/>
+                                <path data-color="odno" d="M15.25 14.38C15.25 11.78 17.36 9.67 19.96 9.67C22.56 9.67 24.67 11.78 24.67 14.38C24.67 16.98 22.56 19.09 19.96 19.09C17.36 19.09 15.25 16.98 15.25 14.38Z" fill="#1F2650"/>
+                                <path data-color="odno" d="M29.29 22.04C28.55 22.04 27.93 21.42 27.93 20.68C27.93 20.56 27.95 20.44 27.97 20.32C27.85 19.32 27.39 18.4 26.66 17.67C25.93 16.94 25.01 16.48 24.01 16.36C23.54 16.31 23.06 16.28 22.57 16.28H21.21L21.02 16.31C20.67 16.38 20.32 16.54 20.03 16.77L19.96 16.83L19.89 16.77C19.6 16.54 19.25 16.38 18.9 16.31L18.71 16.28H17.35C16.86 16.28 16.38 16.31 15.91 16.36C14.91 16.48 13.99 16.94 13.26 17.67C12.53 18.4 12.07 19.32 11.95 20.32C11.97 20.44 11.99 20.56 11.99 20.68C11.99 21.42 11.37 22.04 10.63 22.04C9.89 22.04 9.27 21.42 9.27 20.68C9.27 20.5 9.31 20.32 9.35 20.14C9.51 18.77 10.16 17.5 11.17 16.49C12.18 15.48 13.45 14.83 14.82 14.67C14.99 14.65 15.17 14.63 15.35 14.62C15.16 14.09 15.05 13.53 15.05 12.95C15.05 10.24 17.25 8.04 19.96 8.04C22.67 8.04 24.87 10.24 24.87 12.95C24.87 13.53 24.76 14.09 24.57 14.62C24.75 14.63 24.93 14.65 25.1 14.67C26.47 14.83 27.74 15.48 28.75 16.49C29.76 17.5 30.41 18.77 30.57 20.14C30.61 20.32 30.65 20.5 30.65 20.68C30.65 21.42 30.03 22.04 29.29 22.04Z" fill="#1F2650"/>
+                            </svg>
+                        </a>
+                        <a href="https://vk.com/pzocom" title='VK' class='soc vk'>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="white"/>
+                                <path data-color="vk" d="M25.227 14.885C25.585 14.885 25.902 14.995 26.178 15.215C26.454 15.435 26.658 15.743 26.79 16.138C27.523 18.287 28.474 20.111 29.643 21.611C30.435 22.609 31.104 23.328 31.65 23.767C32.196 24.206 32.707 24.425 33.183 24.425L34.793 24.424C35.33 24.424 35.699 24.599 35.899 24.949C36.024 25.175 36.086 25.443 36.086 25.753C36.086 26.232 35.955 26.633 35.693 26.955C35.431 27.277 35.046 27.521 34.537 27.686C33.804 27.926 33.008 28.002 32.148 27.915C31.174 27.818 30.325 27.513 29.601 27C28.154 25.974 26.947 24.538 25.98 22.691C25.647 22.05 25.33 21.366 25.03 20.638C24.885 21.312 24.635 21.979 24.281 22.638C23.927 23.297 23.468 23.894 22.903 24.43C22.101 25.199 21.133 25.732 19.999 26.028C19.465 26.168 18.859 26.238 18.181 26.238L17.823 26.237C16.985 26.237 16.287 26.024 15.727 25.598C15.167 25.172 14.769 24.567 14.534 23.783C14.401 23.337 14.335 22.86 14.335 22.352C14.335 21.814 14.403 21.318 14.539 20.862L14.626 20.605C14.737 20.068 14.687 19.583 14.478 19.148C14.269 18.713 13.917 18.353 13.421 18.067C13.009 17.823 12.698 17.64 12.489 17.518C12.28 17.396 12.121 17.335 12.013 17.335L11.291 17.334C10.82 17.334 10.466 17.482 10.228 17.779C10.131 17.899 10.061 18.051 10.018 18.234C9.975 18.417 9.954 18.621 9.954 18.847C9.954 19.453 10.126 20.021 10.471 20.552C10.816 21.083 11.302 21.508 11.93 21.828C12.617 22.169 13.172 22.44 13.596 22.641C14.232 22.944 14.695 23.332 14.985 23.806C15.275 24.28 15.418 24.827 15.414 25.446C15.41 26.084 15.251 26.648 14.935 27.137C14.619 27.626 14.165 28.008 13.572 28.283C12.748 28.681 11.785 28.933 10.681 29.038C9.917 29.112 9.214 29.149 8.571 29.147L8.206 29.146C7.608 29.146 7.11 29.005 6.712 28.723C6.314 28.441 6.046 28.043 5.907 27.529C5.773 27.032 5.706 26.464 5.706 25.826C5.706 24.827 5.892 23.914 6.265 23.088C6.638 22.262 7.191 21.528 7.924 20.886C9.041 19.93 9.885 19.125 10.458 18.471C11.031 17.817 11.318 17.172 11.318 16.535C11.318 15.789 11.099 15.163 10.661 14.656C10.223 14.149 9.622 13.896 8.858 13.896L8.235 13.895C7.714 13.895 7.275 13.75 6.918 13.459C6.561 13.168 6.31 12.76 6.165 12.237C6.062 11.888 6.011 11.494 6.011 11.055C6.011 10.468 6.167 9.957 6.48 9.521C6.793 9.085 7.233 8.776 7.801 8.593C8.565 8.345 9.445 8.222 10.442 8.222H10.807C12.21 8.222 13.365 8.394 14.273 8.738C15.181 9.082 15.868 9.587 16.333 10.252C16.928 11.096 17.325 12.114 17.523 13.305C17.605 13.788 17.713 14.228 17.848 14.626C17.983 15.024 18.137 15.37 18.312 15.665C18.578 16.106 18.909 16.464 19.304 16.74C19.532 16.899 19.776 17.024 20.036 17.116C20.296 17.208 20.549 17.254 20.797 17.254L20.98 17.254C21.385 17.254 21.746 17.17 22.063 17C22.38 16.83 22.649 16.587 22.871 16.271C23.163 15.849 23.385 15.373 23.536 14.842C23.687 14.311 23.763 13.727 23.763 13.091L23.762 12.728C23.762 12.23 23.87 11.793 24.086 11.416C24.302 11.039 24.62 10.744 25.039 10.532C25.458 10.32 25.85 10.214 26.215 10.214L26.909 10.213C27.528 10.213 28.015 10.361 28.37 10.658C28.725 10.955 28.978 11.344 29.129 11.827C29.238 12.178 29.293 12.563 29.293 12.983C29.293 13.78 29.068 14.477 28.618 15.074C28.168 15.671 27.527 16.192 26.695 16.636C27.201 17.369 27.626 18.158 27.971 19.001C28.316 19.844 28.566 20.732 28.721 21.663C28.834 22.326 28.828 22.894 28.703 23.368C28.578 23.842 28.329 24.205 27.955 24.456C27.581 24.707 27.094 24.833 26.494 24.833L26.126 24.832C25.905 24.832 25.698 24.783 25.503 24.686C25.308 24.589 25.143 24.44 25.008 24.24C24.844 23.995 24.689 23.689 24.542 23.322C24.395 22.955 24.223 22.535 24.026 22.063C23.656 21.177 23.21 20.357 22.687 19.602C22.164 18.847 21.592 18.204 20.971 17.674L20.797 17.525C21.148 17.84 21.502 18.108 21.858 18.329C22.57 18.771 23.173 19.279 23.666 19.855C24.159 20.431 24.529 21.051 24.776 21.714C24.956 22.193 25.069 22.655 25.115 23.1C25.161 23.545 25.149 23.939 25.079 24.281C25.009 24.623 24.869 24.913 24.659 25.151C24.449 25.389 24.166 25.56 23.81 25.664C23.305 25.814 22.681 25.89 21.937 25.89H21.213C19.952 25.89 18.89 25.582 18.025 24.966C17.16 24.35 16.493 23.474 16.023 22.339C15.748 21.66 15.551 20.952 15.431 20.215C15.311 19.478 15.252 18.746 15.252 18.019L15.253 17.658C15.253 17.374 15.213 17.116 15.133 16.885C15.053 16.654 14.928 16.456 14.758 16.29C14.588 16.124 14.368 15.996 14.097 15.905C13.826 15.814 13.511 15.769 13.152 15.769H11.931C11.328 15.769 10.809 15.943 10.374 16.292C9.939 16.641 9.627 17.101 9.437 17.672L9.35 17.972C9.208 18.499 8.944 19.004 8.559 19.488C8.174 19.972 7.665 20.414 7.031 20.813C6.071 21.412 5.331 21.84 4.811 22.097C4.291 22.354 3.862 22.482 3.524 22.482L2.905 22.481C2.494 22.481 2.141 22.367 1.845 22.139C1.549 21.911 1.348 21.595 1.242 21.191C1.182 20.964 1.152 20.721 1.152 20.463C1.152 19.944 1.271 19.443 1.508 18.961C1.745 18.479 2.108 18.025 2.598 17.599C3.333 16.96 4.264 16.155 5.391 15.183C6.518 14.211 7.415 13.235 8.082 12.256C8.749 11.277 9.117 10.348 9.187 9.468L9.199 9.248C9.199 8.548 9.391 7.966 9.775 7.503C10.159 7.04 10.705 6.809 11.413 6.809L12.068 6.81C13.529 6.81 14.702 7.208 15.587 8.004C16.472 8.8 17.052 9.96 17.326 11.485C17.431 12.094 17.603 12.646 17.842 13.14C18.081 13.634 18.379 14.066 18.737 14.436C19.275 14.989 19.846 15.391 20.45 15.642C20.792 15.784 21.103 15.856 21.384 15.856H21.603C21.923 15.856 22.218 15.772 22.487 15.604C22.756 15.436 22.985 15.189 23.174 14.862C23.426 14.433 23.617 13.949 23.747 13.41C23.877 12.871 23.942 12.273 23.942 11.616L23.941 11.036C23.941 10.114 24.184 9.394 24.67 8.876C25.156 8.358 25.815 8.099 26.647 8.099L27.298 8.1C28.206 8.1 28.918 8.324 29.434 8.772C29.95 9.22 30.257 9.831 30.355 10.606C30.418 11.099 30.45 11.549 30.45 11.957C30.45 12.868 30.211 13.664 29.733 14.347C29.255 15.03 28.532 15.608 27.563 16.081C26.594 16.554 25.788 16.867 25.145 17.021C25.865 17.896 26.424 18.848 26.822 19.878C27.22 20.908 27.45 21.976 27.511 23.083L27.514 23.452C27.514 24.196 27.349 24.805 27.019 25.28C26.689 25.755 26.205 26.102 25.566 26.321C24.803 26.58 23.856 26.71 22.725 26.71H22.003C20.94 26.71 19.991 26.517 19.158 26.131C18.325 25.745 17.616 25.186 17.03 24.454C16.444 23.722 15.993 22.841 15.678 21.812C15.434 21.017 15.287 20.2 15.237 19.363C15.187 18.526 15.225 17.697 15.351 16.877C15.477 16.057 15.677 15.265 15.951 14.5L16.023 14.291C15.703 14.642 15.409 15.038 15.139 15.481C14.735 16.145 14.401 16.866 14.139 17.643C13.877 18.42 13.691 19.229 13.581 20.069L13.518 20.554C13.434 21.184 13.43 21.751 13.505 22.256C13.58 22.761 13.746 23.187 14.004 23.534C14.262 23.881 14.624 24.139 15.089 24.309C15.724 24.545 16.544 24.663 17.549 24.663L18.282 24.662C18.69 24.662 19.051 24.574 19.364 24.398C19.677 24.222 19.928 23.971 20.117 23.645C20.306 23.319 20.424 22.938 20.471 22.501C20.503 22.208 20.506 21.908 20.479 21.602C20.452 21.296 20.381 20.999 20.267 20.711C20.096 20.281 19.851 19.89 19.533 19.538C19.215 19.186 18.823 18.881 18.357 18.623C18.995 18.975 19.533 19.421 19.971 19.962C20.409 20.503 20.739 21.126 20.96 21.831C21.181 22.536 21.296 23.26 21.306 24L21.307 24.358C21.307 24.89 21.238 25.335 21.101 25.692C20.964 26.049 20.752 26.318 20.467 26.499C20.182 26.68 19.822 26.771 19.387 26.771L18.803 26.77C17.949 26.77 17.202 26.53 16.561 26.05C15.92 25.57 15.426 24.888 15.078 24.005C14.73 23.122 14.575 22.077 14.613 20.871C14.651 19.665 14.888 18.532 15.324 17.472C15.76 16.412 16.393 15.463 17.223 14.624C18.053 13.785 19.071 13.119 20.277 12.626C18.805 12.021 17.638 11.044 16.776 9.696C15.914 8.348 15.483 6.636 15.483 4.561C15.483 3.983 15.568 3.451 15.738 2.965C15.908 2.479 16.16 2.063 16.495 1.719C16.83 1.375 17.238 1.109 17.718 0.922C18.198 0.735 18.736 0.642 19.332 0.642L19.96 0.643C20.725 0.643 21.372 0.82 21.901 1.175C22.43 1.53 22.836 2.041 23.118 2.709C23.4 3.377 23.542 4.17 23.542 5.088L23.541 5.679C23.541 6.356 23.657 6.943 23.888 7.438C24.119 7.933 24.468 8.318 24.935 8.594C25.636 9.008 26.134 9.495 26.428 10.057C26.722 10.619 26.869 11.246 26.869 11.938L26.868 12.52C26.868 13.128 26.749 13.668 26.511 14.14C26.273 14.612 25.915 14.996 25.437 15.292C26.009 15.649 26.461 16.107 26.793 16.667C27.125 17.227 27.328 17.867 27.402 18.586L27.42 18.975C27.467 19.673 27.412 20.284 27.255 20.808C27.098 21.332 26.836 21.76 26.469 22.092C26.102 22.424 25.629 22.643 25.05 22.749C24.346 22.88 23.531 22.946 22.605 22.946H21.884C21.469 22.946 21.085 22.868 20.732 22.712C20.379 22.556 20.07 22.324 19.805 22.017C19.54 21.71 19.332 21.336 19.181 20.895C19.03 20.454 18.954 19.96 18.954 19.414L18.955 18.836C18.955 18.281 19.078 17.763 19.325 17.282C19.572 16.801 19.936 16.371 20.417 15.992C19.636 16.261 18.965 16.687 18.404 17.269C17.843 17.851 17.407 18.558 17.096 19.392C16.785 20.226 16.628 21.134 16.625 22.116L16.624 22.697C16.624 23.666 16.771 24.469 17.065 25.106C17.359 25.743 17.797 26.229 18.379 26.563C18.961 26.897 19.693 27.064 20.575 27.064L21.199 27.063C22.256 27.063 23.155 26.929 23.896 26.661C24.637 26.393 25.201 25.975 25.589 25.408C25.977 24.841 26.172 24.129 26.174 23.272L26.175 22.886C26.175 22.029 26.076 21.262 25.878 20.584C25.68 19.906 25.379 19.322 24.975 18.832C24.571 18.342 24.056 17.956 23.43 17.674C24.106 17.523 24.672 17.205 25.128 16.721C25.584 16.237 25.896 15.615 26.063 14.855C26.23 14.095 26.314 13.21 26.314 12.199L26.315 11.479C26.315 10.256 26.077 9.222 25.602 8.377C25.127 7.532 24.428 6.934 23.504 6.583C22.992 6.387 22.558 6.12 22.201 5.782C21.844 5.444 21.576 5.036 21.398 4.559C21.22 4.082 21.131 3.536 21.131 2.921L21.132 2.538C21.132 2.029 21.226 1.583 21.414 1.201C21.602 0.819 21.883 0.516 22.257 0.291C22.631 0.066 23.088 -0.049 23.628 -0.048L24.261 -0.047C25.077 -0.047 25.773 0.157 26.349 0.567C26.925 0.977 27.371 1.575 27.687 2.361C28.003 3.147 28.161 4.084 28.161 5.172L28.16 5.94C28.16 6.95 28.283 7.835 28.528 8.595C28.773 9.355 29.15 9.969 29.657 10.437C30.418 11.138 30.971 12.001 31.315 13.027C31.659 14.053 31.831 15.231 31.831 16.561L31.83 17.34C31.83 18.506 31.677 19.499 31.372 20.319C31.067 21.139 30.599 21.775 29.969 22.227C29.339 22.679 28.522 22.95 27.518 23.038L27.154 23.039C26.593 23.039 26.113 23.178 25.713 23.457C25.313 23.736 25.023 24.145 24.844 24.683C24.715 25.067 24.651 25.462 24.651 25.869C24.651 26.604 24.857 27.201 25.268 27.661C25.679 28.121 26.263 28.436 27.02 28.606C27.933 28.813 28.683 28.917 29.269 28.917L29.922 28.916C30.852 28.916 31.593 28.704 32.145 28.281C32.697 27.858 33.054 27.258 33.216 26.48C33.324 25.978 33.378 25.424 33.378 24.818C33.378 23.72 33.165 22.755 32.741 21.921C32.317 21.087 31.679 20.412 30.826 19.896C32.002 20.608 32.891 21.587 33.493 22.833C34.095 24.079 34.396 25.56 34.396 27.277C34.396 28.142 34.263 28.897 33.996 29.542C33.729 30.187 33.327 30.696 32.79 31.069C32.253 31.442 31.561 31.629 30.714 31.629L29.993 31.628C28.767 31.628 27.693 31.35 26.77 30.794C25.847 30.238 25.134 29.414 24.631 28.322C24.128 27.23 23.877 25.88 23.877 24.272C23.877 23.477 23.974 22.74 24.169 22.061L24.276 21.707C24.425 21.203 24.662 20.731 24.987 20.292C25.312 19.853 25.731 19.453 26.244 19.091C26.757 18.729 27.382 18.412 28.118 18.141C27.625 17.894 27.2 17.536 26.844 17.068C26.488 16.6 26.227 16.027 26.062 15.351C25.897 14.675 25.814 13.899 25.814 13.024L25.815 12.352C25.815 11.025 25.583 9.92 25.119 9.036C24.655 8.152 23.944 7.501 22.986 7.083C23.47 7.309 23.868 7.652 24.18 8.111C24.492 8.57 24.701 9.113 24.807 9.74C24.891 10.234 24.933 10.73 24.933 11.229L24.932 11.821C24.932 12.679 24.802 13.409 24.542 14.011C24.282 14.613 23.887 15.093 23.357 15.451C23.929 15.817 24.371 16.299 24.682 16.896C24.993 17.493 25.171 18.179 25.216 18.954L25.217 19.341C25.217 19.994 25.113 20.565 24.905 21.055C24.697 21.545 24.376 21.936 23.941 22.228C23.506 22.52 22.945 22.706 22.258 22.788Z" fill="#1F2650" transform="translate(2.5 4) scale(0.875)"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class='social'>
+                    <p>Watch the video:</p>
+                    <div class='wrapper__social'>
+                        <a href="#" title='YouTube' class='soc youtube'>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="white"/>
+                                <path data-color="youtube" d="M29.6767 13.1927C29.4134 12.2146 28.657 11.4439 27.6739 11.1705C25.5028 10.5757 20.5001 10.5757 20.5001 10.5757C20.5001 10.5757 15.4973 10.5757 13.3262 11.1705C12.3431 11.4439 11.5867 12.2146 11.3234 13.1927C10.7236 15.3638 10.7236 18.0782 10.7236 18.0782C10.7236 18.0782 10.7236 20.7925 11.3234 22.9636C11.5867 23.9417 12.3431 24.7124 13.3262 24.9858C15.4973 25.5805 20.5001 25.5805 20.5001 25.5805C20.5001 25.5805 25.5028 25.5805 27.6739 24.9858C28.657 24.7124 29.4134 23.9417 29.6767 22.9636C30.2765 20.7925 30.2765 18.0782 30.2765 18.0782C30.2765 18.0782 30.2765 15.3638 29.6767 13.1927Z" fill="#1F2650"/>
+                                <path data-color="youtube" d="M17.2393 21.4939L23.7914 18.0804L17.2393 14.6669V21.4939Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" title='Rumble' class='soc rumble'>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="white"/>
+                                <circle cx="20" cy="20" r="9" fill="#1F2650"/>
+                                <path d="M18.305 23.5L22.495 15.5H24.585L20.395 23.5H18.305ZM17.355 24.7C17.355 24.9344 17.402 25.1471 17.496 25.3381C17.59 25.5291 17.7228 25.6771 17.8944 25.7821C18.066 25.8871 18.2636 25.94 18.4872 25.94H19.6908C19.9671 25.94 20.2003 25.8756 20.3904 25.7468C20.5805 25.618 20.7177 25.4335 20.802 25.1932L21.444 23.5H19.4988L19.0728 24.6124C19.0342 24.7158 18.9818 24.7891 18.9156 24.8324C18.8494 24.8757 18.7741 24.8973 18.6896 24.8973H18.6012C18.4959 24.8973 18.4128 24.868 18.3519 24.8094C18.291 24.7508 18.2606 24.6707 18.2606 24.5692V24.7H17.355Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" title='VK Video' class='soc vkvideo'>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="white"/>
+                                <circle cx="20" cy="20" r="9" fill="#0077FF"/>
+                                <path d="M24.5 18.8654L21.8462 22.3077C21.6423 22.5641 21.3462 22.6923 20.9577 22.6923C20.5692 22.6923 20.2731 22.5641 20.0692 22.3077L17.4154 18.8654C17.1346 18.5096 16.9942 18.0865 16.9942 17.5962C16.9942 16.6154 17.7654 15.8462 18.7654 15.8462C19.1538 15.8462 19.5192 15.9808 19.8615 16.25L20.9577 17.3462L22.0538 16.25C22.3962 15.9808 22.7615 15.8462 23.15 15.8462C24.15 15.8462 24.9212 16.6154 24.9212 17.5962C24.9212 18.0865 24.7808 18.5096 24.5 18.8654Z" fill="white"/>
+                                <circle cx="22.5" cy="18.5" r="1.2" fill="#FF2B42"/>
+                            </svg>
+                        </a>
+                        <a href="#" title='Dzen' class='soc dzen'>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="white"/>
+                                <path d="M20.0001 12.788L21.4291 17.116L25.7601 18.547L22.8881 21.421L24.3171 25.75L20.0001 24.321L15.6831 25.75L17.1121 21.421L14.2401 18.547L18.5711 17.116L20.0001 12.788Z" fill="#1F2650"/>
+                                <path d="M28.7 17.255L29.814 20.636L33.166 21.748L30.492 24.423L31.606 27.804L28.22 26.694L24.834 27.804L25.948 24.423L23.274 21.748L26.626 20.636L28.7 17.255Z" fill="#1F2650"/>
+                                <path d="M11.3 17.255L14.686 20.636L18.038 21.748L15.364 24.423L16.478 27.804L13.1 26.694L9.714 27.804L10.828 24.423L8.154 21.748L11.506 20.636L11.3 17.255Z" fill="#1F2650"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- Social networks -->
-          <div>
-            <div class="text-xs text-gray-400 mb-3">We are on social networks:</div>
-            <div class="flex items-center space-x-3">
-              <!-- VK -->
-              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">VK</a>
-              <!-- Telegram -->
-              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">TG</a>
+            <div class='links'>
+                <div class='column column-2'>
+                    <p class='h4'>Company</p>
+                    <a class='small-text' href="/o-kompanii">About the company</a>
+                    <a class='small-text' href="/delivery">Delivery</a>
+                    <a class='small-text' href="/services">Customer Service</a>
+                    <a class='small-text' href="/be-dealer">Become a dealer</a>
+                    <a class='small-text' href="/vakancii">Vacancies</a>
+                    <a class='small-text' href="/news">News</a>
+                    <a class='small-text' href="/statiy">Articles</a>
+                    <a class='small-text' href="/zhaloby-i-predlozheniya">Complaints and suggestions</a>
+                    <a class='small-text' href="/rekvizity">Requisites</a>
+                    <a class='small-text' href="/deklaraciya-garantii">Warranty declaration</a>
+                    <a class='small-text' href="/vse_video">Video Reviews</a>
+                    <a class='small-text' href="#">Customer Cases</a>
+                    <a class='small-text' href="#">Licenses and certificates</a>
+                    <a class='small-text' href="/managers">Managers</a>
+                    <a class='small-text' href="/skidki-i-akcii">Promotions</a>
+                    <a class='small-text' href="/catalog/novinki">New</a>
+                    <a class='small-text' href="/quiz/">Selection of equipment</a>
+                </div>
+                <div class='column column-3'>
+                    <a class='h4' href="/catalog">Catalog</a>
+                    <a class='h4' href="/linii">Ready-made solutions</a>
+                    <a class='h4' href="/contacts">Contacts</a>
+                    <div class='section'><a class='small-text' href="mailto:sell@p-z-o.com">sell@p-z-o.com</a></div>
+                    <div class='section'><a class='small-text' href="tel:+74993900555">+7 (499) 390-05-55</a></div>
+                    <div class='section'>
+                        <address class='small-text'>г. Подольск, ул. Плещеевская, 34</address>
+                        <p class='small-text'>Mon-Fri from 9:00 to 18:00</p>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- Watch the video -->
-          <div>
-            <div class="text-xs text-gray-400 mb-3">Watch the video:</div>
-            <div class="flex items-center space-x-3">
-              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">YT</a>
-              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">RT</a>
-              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">PL</a>
-              <a href="#" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white flex items-center justify-center text-xs font-bold transition">+</a>
-            </div>
-          </div>
         </div>
-
-        <!-- Col 2: Company Navigation -->
-        <div class="lg:col-span-3">
-          <h4 class="text-base font-bold text-white mb-6">Company</h4>
-          <ul class="space-y-3 text-xs text-gray-400">
-            <li><a href="#" class="hover:text-white transition">About the company</a></li>
-            <li><a href="#" class="hover:text-white transition">Delivery</a></li>
-            <li><a href="#" class="hover:text-white transition">Customer service</a></li>
-            <li><a href="#" class="hover:text-white transition">Become a dealer</a></li>
-            <li><a href="#" class="hover:text-white transition">Vacancies</a></li>
-            <li><a href="#" class="hover:text-white transition">News</a></li>
-            <li><a href="#" class="hover:text-white transition">Articles</a></li>
-            <li><a href="#" class="hover:text-white transition">Complaints and suggestions</a></li>
-            <li><a href="#" class="hover:text-white transition">Details</a></li>
-            <li><a href="#" class="hover:text-white transition">Warranty Declaration</a></li>
-            <li><a href="#" class="hover:text-white transition">Video reviews</a></li>
-            <li><a href="#" class="hover:text-white transition">Production Cases</a></li>
-            <li><a href="#" class="hover:text-white transition">Licenses and certificates</a></li>
-            <li><a href="#" class="hover:text-white transition">Managers</a></li>
-            <li><a href="#" class="hover:text-white transition">Stock</a></li>
-            <li><a href="#" class="hover:text-white transition">Sales</a></li>
-            <li><a href="#" class="hover:text-white transition">Equipment selection</a></li>
-          </ul>
+        <div class='down'>
+            <a class='small-text' href="/politika-konfidencialnosti">Privacy Policy</a>
+            <a class='small-text' href="/zaschita-personalnyh-dannyh">Protection of personal data</a>
+            <a class='small-text' href="/pravila-obrabotki-dannyh">Rules for the processing of personal data</a>
+            <a class='small-text' href="/soglasie-polzovatelya">Consent to the processing of personal data</a>
         </div>
-
-        <!-- Col 3: Catalog & Solutions -->
-        <div class="lg:col-span-2">
-          <h4 class="text-base font-bold text-white mb-6">Catalog</h4>
-          <div class="space-y-4 text-xs text-gray-400">
-            <div><a href="#" class="hover:text-white transition font-medium">Ready-made solutions</a></div>
-          </div>
-        </div>
-
-        <!-- Col 4: Contacts Desk -->
-        <div class="lg:col-span-3">
-          <h4 class="text-base font-bold text-white mb-6">Contacts</h4>
-          <div class="space-y-3 text-xs text-gray-400">
-            <a href="mailto:sel@p-z-o.com" class="block text-white hover:underline font-semibold">sel@p-z-o.com</a>
-            <a href="tel:+74993900555" class="block text-sm font-bold text-white hover:underline">+7 (499) 390-05-55</a>
-            <p class="pt-2 text-gray-400 leading-relaxed">
-              Podolsk, ul. Pleshcheevskaya, 34<br>
-              Mon-Fri from 8:00 to 18:00 PM
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Legal & Copyright Bar -->
-      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-gray-500 gap-4">
-        <div class="flex flex-wrap items-center gap-6">
-          <a href="#" class="hover:text-gray-400 transition">Privacy Policy</a>
-          <a href="#" class="hover:text-gray-400 transition">Protection of personal data</a>
-          <a href="#" class="hover:text-gray-400 transition">Rules for processing personal data</a>
-          <a href="#" class="hover:text-gray-400 transition">Consent to the processing of personal data</a>
-        </div>
-        <div class="flex items-center space-x-6">
-          <span>&copy; 2016-2026</span>
-          <!-- Scroll to top arrow button -->
-          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-white transition">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
-          </a>
-        </div>
-      </div>
-
+        <small>© 2016-2026</small>
     </div>
-  </footer>
+    <button type='button' class='to-top' title='Back to top' onclick='window.scrollTo({top: 0, behavior: "smooth"})'>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19L5 12L6.41 10.59L12 16.17L17.59 10.59L19 12L12 19Z" fill="white"/>
+            <path d="M12 13L5 6L6.41 4.59L12 10.17L17.59 4.59L19 6L12 13Z" fill="white"/>
+        </svg>
+    </button>
+</footer>
 
-  <!-- ================= INTERACTIVE SCRIPTS ================= -->
-  <script>
-    // Timeline Data Model
-    const milestones = [
-      { year: "2016", text: "The plant was founded, production facilities were equipped, and the launch of primary equipment series commenced." },
-      { year: "2017", text: "Created a network of regional branches in the field of polymer recycling and secondary raw material collection." },
-      { year: "2018", text: "Production expansion, factory floor modernization, and doubling of manufactured product lineup." },
-      { year: "2019", text: "Entered export markets, established cooperation with the Ministry of Industry and Trade, and grew dealer networks." },
-      { year: "2020", text: "R&D and production of turnkey recycling complexes capable of processing all standard polymer categories." },
-      { year: "2021", text: "Participation in premier international industrial expos, expanding global deliveries across Eurasia." },
-      { year: "2022", text: "Developed high-tonnage scrap balers and opened an engineering branch in Tula." },
-      { year: "2023", text: "Modernized machine tool fleet, increased factory output capacity, and launched automated horizontal balers." },
-      { year: "2024", text: "Introduced advanced packaging and warehouse equipment, including high-speed orbital and stretch pallet wrappers." },
-      { year: "2025", text: "Released heavy-duty metal scrap shears and expanded continuous baling press automation lines." }
-    ];
-
-    let currentMilestone = 0;
-
-    function setMilestone(index) {
-      currentMilestone = index;
-      document.getElementById('timelineYear').innerText = milestones[index].year;
-      document.getElementById('timelineDesc').innerText = milestones[index].text;
-
-      // Update dot active styles
-      const dots = document.querySelectorAll('.timeline-dot');
-      dots.forEach((dot, idx) => {
-        const circle = dot.querySelector('span:first-child');
-        const label = dot.querySelector('span:last-child');
-        if (idx === index) {
-          circle.className = "w-3.5 h-3.5 rounded-full bg-pzo-navy ring-4 ring-blue-100 transition-all";
-          label.className = "text-xs font-bold text-pzo-textPrimary mt-2";
-        } else {
-          circle.className = "w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-pzo-navy transition-all";
-          label.className = "text-xs font-semibold text-gray-400 mt-2";
-        }
-      });
-    }
-
-    function nextMilestone() {
-      currentMilestone = (currentMilestone + 1) % milestones.length;
-      setMilestone(currentMilestone);
-    }
-
-    function prevMilestone() {
-      currentMilestone = (currentMilestone - 1 + milestones.length) % milestones.length;
-      setMilestone(currentMilestone);
-    }
-  </script>
-
+<script src="static/js/base.js"></script>
+<script src="static/js/slick-custom.js"></script>
+<script src="static/js/cart.js"></script>
 </body>
 </html>
